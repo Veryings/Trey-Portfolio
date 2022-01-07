@@ -71,6 +71,12 @@ body{
     background-repeat: no-repeat;
     background-position: left 0px top 74px;
 }
+
+.section-page{
+    height: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
 /*
 small devices (landcape phones 576px and up)
 */
