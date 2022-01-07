@@ -1,6 +1,14 @@
 :root{
     --title-font : 'Bebas Neue', cursive;
-    --bd-body-font : font-family: 'Roboto', sans-serif;
+    --bd-body-font : 'Roboto', sans-serif;
+    --subtitle-font : 'Fira Sans', sans-serif;
+    --bd-primary-color : #91CBFB;
+    --bd-secondary-color : #4294BA;
+    --bd-dark-color : #212121;
+    --bd-light-color : #f8f8f8;
+    --bd-font-size: 1.2rem;
+    --bd-line-height: 1.5rem;
+    --bd-font-weight: 400;
 }
 .sticky-footer {
     position: sticky;
@@ -26,12 +34,36 @@ h1,
 
 body{
     font-family: 'Roboto';
+    color: var(--bd-dark-color);
+    background-color: var(--bd-light-color);
+    font-size: var(--bd-font-size);
+    font-weight: var(--bd-font-weight);
+    line-height: var(--line-height);
+    --webkit-text-size-adjust: 100%;
 }
 
 
 /*
 2560x500 1200x400 992x300 576x200 375x150
 */
+
+.mainTitle{
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+/*sizing for logo for header*/
+.mainLogo{
+    height: .6em
+}
+/*styling subtitle*/
+.subTitle{
+    font-family: var(--subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
+}
 .mainHeader{
     padding-top: calc(2em + 74px);
     background-image: url(/img/blue_banner_576.jpg);
@@ -47,13 +79,32 @@ small devices (landcape phones 576px and up)
     background-image: url(/img/blue_banner_768.jpg);
     height: 274px;
     }
+.mainTitle {
+    font-family: var(--title-font);
+    font-size: 1rem;
+    line-height: .5rem;
+}
 
+/*sizing for logo for header*/
+.mainLogo {
+    height: .6em
+}
 }
 
 @media (min-width: 767.98px){
     .mainHeader{
         background-image: url(/img/blue_banner_992.jpg);
         height: 374px;
+    }
+    .mainTitle {
+        font-family: var(--title-font);
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+    /*sizing for logo for header*/
+    .mainLogo {
+        height: .6em
     }
 }
 
@@ -69,6 +120,16 @@ small devices (landcape phones 576px and up)
         background-image: url(/img/blue_banner_2560.jpg);
         height: 574px;
     }
+    .mainTitle {
+        font-family: var(--title-font);
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    /*sizing for logo for header*/
+    .mainLogo {
+        height: .6em
+    }
 }
 
 @media(min-width: 1399.98px) {
@@ -76,4 +137,15 @@ small devices (landcape phones 576px and up)
         background-image: url(/img/blue_banner_2560.jpg);
         height: 574px;
     }
+    .mainTitle {
+        font-family: var(--title-font);
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    /*sizing for logo for header*/
+    .mainLogo {
+        height: .6em
+    }
 }
+
