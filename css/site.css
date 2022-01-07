@@ -1,10 +1,34 @@
-
+:root{
+    --title-font : 'Bebas Neue', cursive;
+    --bd-body-font : font-family: 'Roboto', sans-serif;
+}
 .sticky-footer {
     position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
 }
+/*-----element over rides -----*/ 
+h6,
+.h6, 
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--title-font);
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+
 /*
 2560x500 1200x400 992x300 576x200 375x150
 */
@@ -20,7 +44,7 @@ small devices (landcape phones 576px and up)
 */
 @media (min-width: 575.98px){
     .mainHeader {
-    background-image: url(/img/blue_banner_576.jpg);
+    background-image: url(/img/blue_banner_768.jpg);
     height: 274px;
     }
 
@@ -33,7 +57,7 @@ small devices (landcape phones 576px and up)
     }
 }
 
-@media (min-width: 992.98px){
+@media (min-width: 991.98px){
     .mainHeader{
         background-image: url(/img/blue_banner_1200.jpg);
         height: 474px;
