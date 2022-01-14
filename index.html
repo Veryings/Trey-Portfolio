@@ -7,209 +7,665 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-   <!--Custome Style Sheet-->
-  <link rel="stylesheet" href="css/site.css">
+    <!--Custome Style Sheet-->
+    <link rel="stylesheet" href="css/site.css">
 </head>
 
 <main class="d-flex flex-column h-100">
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="img/Dane_Signature-01.png" height="50">
-            </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class='back-list'></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <!--banner immage-->
     <header class="mainHeader">
         <div class="container d-flex justify-content-end align-items-center h-100">
             <div>
-            <div class="mainTitle"><span>Dane<img src="/img/Dw_signature_black.png" class="mainLogo"></span></div>
-            <div class="mainTitle">Whitman</div>
-            <div class="subTitle">Netscape Developer</div>
-            <button class="btn btn-primary mt-3">Contact Me</button>
+                <div class="mainTitle"><span>William<img src="/img/Dw_signature_black.png" class="mainLogo"></span></div>
+                <div class="mainTitle">Ogburn</div>
+                <div class="subTitle">Developer Extraordinaire</div>
+                <button class="btn btn-primary mt-3">Contact Me</button>
             </div>
         </div>
     </header>
 
-        <!--all sections below-->
+    <!--all sections below-->
     <main class="container">
-    <section class="section-page" id="about">
-          <h1>About Me</h1>
-          <div class="row">
-             <div class="col-12 col-md-4">
-                 <picture>
-                     <source srcset="/img/dane_profile.jpg" media="(min-width: 991.98px)"/>
-                     <source srcset="/img/dane_profile_768.jpg" media="(min-width: 575.98px)"/>
-                     <source srcset="/img/dane_profile_992.jpg" media="(min-width: 767.98px)"/>
-                     <img src="/img/dane_profile_576.jpg" class="rounded-3 border border-2 border-dark img-fluid">
-                </picture>
-             </div> 
-            <div class="col-12 col-md-8">
-                <h2>I'm Dan Whitman, an AOL internet specialist and software developer.</h2>
-            <p>
-              I am a software developer based in the United States and I have been building applications
-              websites for years, which bring companies ideas to life. I mainly use C# and .NET to build web
-              applicationsI help convert a vision and an idea into meaningful and useful software products. ility transform requirements into
-              useful software helps me prioritize tasks, iterate fast and deliver faster. Take a look at
-              my
-              portfolio work and lets see if we can work together on your next project.
+        <section class="section-page p-1 bgColor" id="about">
+            <div class="row">
+                <div class="content">
+                    <div class="wrapSlider">
+                        Fluent in:
+                        <div class="slider">
+                            <div class="slide1">HTML</div>
+                            <div class="slide2">JS</div>
+                            <div class="slide3">CSS</div>
+                            <div class="slide4">C#</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="card">
+                        <div class="card_content">
+                            <div class="card_front">
+                                <h2 class="card_title">Trey Ogburn</h3>
+                                <p class="card_subtitle">Your next developer:</p>
+                            </div>
 
-          </p>
-          <address>
-              <div class="row">
-                  <div class="col-12 col-lg-6">
-                      <span>NAME:</span>
-                      <span>Dan Whitman</span>
-                    
-                  </div>
-                  <div class="col-12 col-lg-6">
-                      <span>Email:</span>
-                      <span>
-                      <a href="mailto:dane@example.com">Dane@example.com</a>
-                      </span>
+                            <div class="card_back">
+                                <p class="card_body">I want to help you with clever design and hard work.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <h2>I'm Dan Whitman, an AOL internet specialist and software developer.</h2>
+                    <p>
+                        I am a software developer based in the United States and I have been building applications
+                        websites for years, which bring companies ideas to life. I mainly use C# and .NET to build web
+                        applicationsI help convert a vision and an idea into meaningful and useful software products.
+                        ility transform requirements into
+                        useful software helps me prioritize tasks, iterate fast and deliver faster. Take a look at
+                        my
+                        portfolio work and lets see if we can work together on your next project.
+
+                    </p>
+                    <address>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <span>NAME:</span>
+                                <span>William</span>
+
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <span>Email:</span>
+                                <span>
+                                    <a href="mailto:wogburn13@gmail.com">wogburn13@gmail.com</a>
+                                </span>
 
 
-                  </div>
-                  <div class="col-12">
-                      <span>Location:</span>
-                      <span>North Carolina</span>
-                      
+                            </div>
+                            <div class="col-12">
+                                <span>Location:</span>
+                                <span>North Carolina</span>
 
-                   </div>
-                   <div class="col-12 mt-3">
-                       <a href="#" class="btn btn-xl btn-primary">Download Resume</a>
-                   </div>
-              </div>
-          </address>
-          </div>
-      </section>
-      <section class="section-page" id="skills">
-          <div class="row">
-              <div class="col-12">
-                  <h1>MY SKILLS</h1>
-                  <p>I am a creative problem solver. I build fullstack web and mobile applications. I use C#, SQL,
-                      ASP.net, Javacript, Xamarin, Bootstrap, HTML and CSS. I have highlighthed my key technical skills
-                      that I will bring to your project.
-                  </p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col=12 col-md-4">
-                  
-                      <img src="/img/Logos/logos/CsharpLogo.png" class="" alt="...">
-                      <h3>C# Development</h3>
-                      
-                          <p>I use C# on a daily basis to build websites and mobile
-                              applications. You can see examples of my work implementing
-                              C# in my projects sections</p>
-                              <div class="card-footer"></div>
-                      
 
-              </div>
-              <div class="col=12 col-md-4">
-                  
-                      <img src="/img/Logos/logos/ASPNETMVC.png" class="" alt="...">
-                      <h3>C# Development</h3>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <a href="#" class="btn btn-xl btn-primary">Download Resume</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+        </section>
+        <section class="section-page" id="skills">
+            <div class="row">
+                <div class="col-12">
+                    <h1>MY SKILLS</h1>
+                    <p>I am a creative problem solver. I build fullstack web and mobile applications. I use C#, SQL,
+                        ASP.net, Javacript, Xamarin, Bootstrap, HTML and CSS. I have highlighthed my key technical
+                        skills
+                        that I will bring to your project.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col=12 col-md-4">
 
-                      <p>I use proven design patterns and frameworks to build
-                          websites. ASP.net and MVC fits the bill for most projects.
-                          Visit my projects to see examples.</p>
-                      <div class="card-footer"></div>
-                  
+                    <img src="/img/Logos/logos/CsharpLogo.png" class="" alt="...">
+                    <h3>C# Development</h3>
 
-              </div>
-              <div class="col=12 col-md-4">
-                  
-                      <img src="/img/Logos/logos/FrontEndDev.png" class="" alt="...">
-                      <h3>C# Development</h3>
+                    <p>I use C# on a daily basis to build websites and mobile
+                        applications. You can see examples of my work implementing
+                        C# in my projects sections</p>
+                    <div class="card-footer"></div>
 
-                      <p >I use HTML, CSS and Javascript to build attractive
-                          responsive frontends for websites. To see my front end work
-                          in my projects section.</p>
-                      <div class="card-footer"></div>
-                  
 
-              </div>
-              <div class="col=12 col-md-4">
-                  
-                      <img src="/img/Logos/logos/Xamarin.png" class="" alt="...">
-                      <h3>C# Development</h3>
+                </div>
+                <div class="col=12 col-md-4">
 
-                      <p class="card-text">Xamarin is a cross platform native mobile development
-                          platform. This allows me to create mobile applicaitons the
-                          run on IOS and Andriod.</p>
-                      <div class="card-footer"></div>
-                  
+                    <img src="/img/Logos/logos/ASPNETMVC.png" class="" alt="...">
+                    <h3>C# Development</h3>
 
-              </div>
-              <div class="col=12 col-md-4">
-                  
-                      <img src="/img/Logos/logos/SQL.png" class="" alt="...">
-                      <h3>C# Development</h3>
+                    <p>I use proven design patterns and frameworks to build
+                        websites. ASP.net and MVC fits the bill for most projects.
+                        Visit my projects to see examples.</p>
+                    <div class="card-footer"></div>
 
-                      <p>Database Development is critical to most projects. I am well
-                          veresed in SQL Development from queries to design.</p>
->
-                      <div class="card-footer"></div>
-                  
 
-              </div>
-              <div class="col=12 col-md-4">
-                  
-                      <img src="/img/Logos/logos/Bootstrap.png" class="" alt="...">
-                      <h3>C# Development</h3>
+                </div>
+                <div class="col=12 col-md-4">
 
-                      <p>The look and feel are very important elements to any
-                          project. I utilize bootstrap to bring an attractive design
-                          to your web projects.</p>
-                      <div class="card-footer"></div>
-                  
+                    <img src="/img/Logos/logos/FrontEndDev.png" class="" alt="...">
+                    <h3>C# Development</h3>
 
-              </div>
-          </div>
+                    <p>I use HTML, CSS and Javascript to build attractive
+                        responsive frontends for websites.
+                        To see my front end work in my projects section.</p>
+                    <div class="card-footer"></div>
 
-      </section>
-      <section class="section-page" id="portfolio">
-        <h1>Portfolio</h1>
-      </section>
-      <section class="section-page" id="contact">
-        <h1>Contact</h1>
-      </section>
+
+                </div>
+                <div class="col=12 col-md-4">
+
+                    <img src="/img/Logos/logos/Xamarin.png" class="" alt="...">
+                    <h3>C# Development</h3>
+
+                    <p class="card-text">Xamarin is a cross platform native mobile development
+                        platform. This allows me to create mobile applicaitons the
+                        run on IOS and Andriod.</p>
+                    <div class="card-footer"></div>
+
+
+                </div>
+                <div class="col=12 col-md-4">
+
+                    <img src="/img/Logos/logos/SQL.png" class="" alt="...">
+                    <h3>C# Development</h3>
+
+                    <p>Database Development is critical to most projects. I am well
+                        veresed in SQL Development from queries to design.</p>
+                    <div class="card-footer"></div>
+
+
+                </div>
+                <div class="col=12 col-md-4">
+
+                    <img src="/img/Logos/logos/Bootstrap.png" class="" alt="...">
+                    <h3>C# Development</h3>
+
+                    <p>The look and feel are very important elements to any
+                        project. I utilize bootstrap to bring an attractive design
+                        to your web projects.</p>
+                    <div class="card-footer"></div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="section-page" id="portfolio">
+            <div class="col-12"></div>
+            <h1>Portfolio</h1>
+            <p> Showcasing complete functional projects demonstrates what I can bring to your porject. I built these
+                projects from the ground up to demonstrate skill front-end, back-end, security, and database
+                development.</p>
+            </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 gy-3">
+                <div class="col d-flex justify-content-center justify-content-md-start">
+                    <div class="card projectCard">
+                        <img src="img/Logos/logos/BugTracker2.jpg" class="card-img-top img-fluid" alt="Bug Tracker">
+                        <div class="card-body">
+                            <h5 class="card-title">TroubleSnooper</h5>
+                            <p class="card-text">
+                                A Full Stack feature rich bug tracker built with asp.net MV
+                            </p>
+
+                            </h5>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target=#BugTrackerModal>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center">
+                    <div class="card projectCard">
+                        <img src="/img/Logos/logos/ExpenseTracker2.jpg" alt="Expense Tracker">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    A Full Stack personal budgeting app built with asp.net MVC, C#
+                                    and SQL.
+                                </p>
+                            </h5>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target=#ExpenseModal>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center justify-content-md-end">
+                    <div class="card projectCard">
+                        <img src="/img/Logos/logos/Blog2.jpg" alt="Blog">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    A Full Stack complete Blogging platform built with asp.net MVC, C#
+                                    and SQL.
+                                </p>
+                            </h5>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target=#BlogModal>Hot Takes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="section-page" id="coding challenges">
+            <h1>Coding Challenges</h1>
+        </section>
+        <section class="section-page" id="projects">
+            <h1>Projects</h1>
+        </section>
+        <section class="section-page" id="blog">
+            <h1>Blog</h1>
+        </section>
+        <section class="section-page" id="contact">
+            <div class="container">
+                <h1>Contact</h1>
+                <div class="p-3 border border-2 rounded shadow-lg bg-dark text-light" id="formContainingDiv">
+                    <form name="contactForm" class="row g-3 p-2" netlify data-netlify-recaptcha="true">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="inputFirstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" name="firstName" required />
+
+
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="inputLastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" name="lastName" required />
+                                </div>
+                                <div class="col-12 col-md-4 form-group">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="email" required
+                                        placeholder="example@email.com" />
+
+                                </div>
+                                <div class="col-12 col-md-4 form-group">
+                                    <label for="inputPhone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" name="phone" placeholder="555-555-0101" />
+                                </div>
+
+
+                                <div class="col-12 col-md-4 form-group">
+                                    <label for="inputContactReason" class="form-label">Reason</label>
+                                    <select class="form-select" name="contactReason">
+                                        <option>Choose one...</option>
+                                        <option value="freelance">Freelance Work</option>
+                                        <option value="contract">Contract Work</option>
+                                        <option value="personal">Personal</option>
+                                        <option value="other">Other</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label for="inputMessage" class="form-label">Message</label>
+                                    <textarea type="text" class="form-control" rows="4"
+                                        placeholder="Write your message here..." required></textarea>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Print</label>
+                                        <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Word of mouth</label>
+                                        <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">An Epiphany</label>
+                                        <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Online</label>
+                                        <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">LinkedIn</label>
+                                        <input type="checkbox" value="print" class="form-check-input" name="funnel" />
+                                    </div>
+                                    <div data-netlify-recaptcha="true">
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center pt-2">
+                                        <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </section>
     </main>
+
+    <!--modals-->
+    <!--Bug Tracker-->
+    <div class="modal fade" id="BugTrackerModal" tabindex="-1" aria-labelledby="BugTrackerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BugTrackerModalLabel">Insecticide</h5>
+                    <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <!--carousel-->
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/img/Logos/logos/BugTracker2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselBugTracker" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselBugTracker" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+
+                                <!--End Carousel-->
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <h3>Insecticide</h3>
+                                <div>
+                                    <p>
+                                        Insecticide is a software defect tracking system.
+                                        Commonly known as a bug tracker. Insectcide is built
+                                        with ASP.NET, MVC, C# and SQL. A role based security
+                                        system was implemented to create permission based roles.
+                                        The roles of Admin , Project Manager, Developer and
+                                        Submitter restrict what the user can see and do. The
+                                        software allows for users to submit tickets and those
+                                        tickets are tracked through status from Open to
+                                        Complete.
+
+                                    </p>
+                                    <p>
+                                        The system was built with C# and .Net in 3 weeks. The
+                                        front end was developed with HTML, Javascript and
+                                        Bootstrap. The backend utlizies MVC and C#. The database
+                                        was built with SQL Server and hosted on Azure. Please
+                                        visit the site and try it out.
+
+                                    </p>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <h4>Project Type:</h4>Web Application
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4>Technologies:</h4>
+                                        <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1></h1>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Site</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ExpenseModal" tabindex="-1" aria-labelledby="ExpenseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id=ExpenseModalLabel>Nickel and Dime</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <!--carousel two-->
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/img/Logos/logos/ExpenseTracker2.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExpense" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" z
+                                        data-bs-target="#carouselExpense" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!--end carousel two-->
+
+
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <h3>Insecticide</h3>
+                                <div>
+                                    <p>
+                                        Insecticide is a software defect tracking system.
+                                        Commonly known as a bug tracker. Insectcide is built
+                                        with ASP.NET, MVC, C# and SQL. A role based security
+                                        system was implemented to create permission based roles.
+                                        The roles of Admin , Project Manager, Developer and
+                                        Submitter restrict what the user can see and do. The
+                                        software allows for users to submit tickets and those
+                                        tickets are tracked through status from Open to
+                                        Complete.
+
+                                    </p>
+                                    <p>
+                                        The system was built with C# and .Net in 3 weeks. The
+                                        front end was developed with HTML, Javascript and
+                                        Bootstrap. The backend utlizies MVC and C#. The database
+                                        was built with SQL Server and hosted on Azure. Please
+                                        visit the site and try it out.
+
+                                    </p>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <h4>Project Type:</h4>Web Application
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4>Technologies:</h4>
+                                        <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Site</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div modal class="modal fade" id="BlogModal" tabindex="-1" aria-labelledby="BlogModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BlogModalLabel">Cheat Codes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col col-md-5">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="##carouselBlog" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="##carouselBlog" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/img/Logos/logos/Blog2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="##carouselBlog"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Insecticide</h3>
+                            <div>
+                                <p>
+                                    Insecticide is a software defect tracking system.
+                                    Commonly known as a bug tracker. Insectcide is built
+                                    with ASP.NET, MVC, C# and SQL. A role based security
+                                    system was implemented to create permission based roles.
+                                    The roles of Admin , Project Manager, Developer and
+                                    Submitter restrict what the user can see and do. The
+                                    software allows for users to submit tickets and those
+                                    tickets are tracked through status from Open to
+                                    Complete.
+
+                                </p>
+                                <p>
+                                    The system was built with C# and .Net in 3 weeks. The
+                                    front end was developed with HTML, Javascript and
+                                    Bootstrap. The backend utlizies MVC and C#. The database
+                                    was built with SQL Server and hosted on Azure. Please
+                                    visit the site and try it out.
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Web Application
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Site</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
@@ -254,6 +710,6 @@
             });
         });
     </script>
-</body>
+    </body>
 
 </html>
