@@ -13,6 +13,7 @@
     --level-one: translateZ(3rem);
     --level-two: translateZ(6rem);
     --level-three: translateZ(9rem);
+    --level-four: translatez(12rem);
     --fw-normal: 400;
     --fw-bold: 700;
     --clr: #000000;
@@ -198,6 +199,11 @@
         font-size: 1.5rem;
         line-height: 1.6;
         
+    }
+
+    .card_logo {
+        transform: var(--level-four);
+        order: 3;
     }
 
 
