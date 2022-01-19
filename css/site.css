@@ -15,7 +15,7 @@
     --level-three: translateZ(9rem);
     --level-four: translatez(12rem);
     --fw-normal: 400;
-    --fw-bold: 700;
+    --fw-bold: 700;slide 5s linear infinite;
     --clr: #000000;
     --animation-iteration-count: 1;
     }
@@ -56,7 +56,7 @@
 
     .slide1 {
         background: rgb(82, 71, 146);
-        animation: slide 5s linear infinite;
+        animation: 
     }
 
     .slide2 {
