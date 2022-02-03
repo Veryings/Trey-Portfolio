@@ -18,6 +18,9 @@
     --fw-bold: 700: slide 5s linear infinite;
     --clr: #000000;
     --animation-iteration-count: 1;
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-black: black;
 }
 
 
@@ -35,18 +38,22 @@ body {
     display: grid;
     place-items: center;
     font-family: 'Roboto', sans-serif;
+    background: var(--clr-bg);
+    color: var(--clr-neon);
 }
 
-.card {
+.Card {
     position: relative;
     display: flex;
     flex-flow: column;
     max-width: 400px;
     perspective: 800px;
+    border-radius: 25px;
+    border: 1px solid black;
 
 }
 
-.card_content {
+.Card_content {
     text-align: center;
     position: relative;
     padding: 15em 5em;
@@ -54,15 +61,17 @@ body {
     transition: transform 1s;
     background: rgb(71, 3, 14);
     transform-style: preserve-3d;
+    border-radius: 25px;
+
 }
 
-.card:hover .card_content {
+.Card:hover .Card_content {
     transform: rotateY(.5turn);
 
 }
 
-.card_front,
-.card_back {
+.Card_front,
+.Card_back {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -73,16 +82,21 @@ body {
     transform-style: preserve-3d;
     display: grid;
     align-content: center;
+    border-radius: 25px;
+
 }
 
-.card_front {
-    background-color: #4fc04f;
+.Card_front {
+    background-color: #598097;
     background-image: url(/img/placeholder.jpg);
     background-size: cover;
     background-blend-mode: soft-light;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+
 }
 
-.card_front::before {
+.Card_front::before {
     content: '';
     position: absolute;
     --spacer: 1em;
@@ -92,25 +106,28 @@ body {
     right: var(--spacer);
     border: 3px solid currentColor;
     transform: var(--level-one);
+    border-radius: 25px;
+
 }
 
-.card_title {
+.Card_title {
     font-size: 3rem;
     transform: var(--level-three);
     order: 2;
     text-transform: uppercase;
 }
 
-.card_subtitle {
+.Card_subtitle {
     transform: var(--level-two);
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: .85rem;
     font-weight: var(--fw-bold);
     opacity: .9;
+    color: white;
 }
 
-.card_body {
+.Card_body {
     transform: var(--level-two);
     font-weight: var(fw-normal);
     font-size: 1.5rem;
@@ -118,17 +135,18 @@ body {
 
 }
 
-.card_logo {
+.Card_logo {
     transform: var(--level-four);
     order: 3;
 }
 
 
 
-.card_back {
+.Card_back {
     transform: rotateY(.5turn);
     color: var(--clr);
-    background: #4fc04f;
+    background: linear-gradient(rgb(93, 41, 136), #ad4089, rgb(145, 61, 187), #484c72);
+
 }
 
 
@@ -157,13 +175,57 @@ h1,
 
 body {
     font-family: 'Roboto';
-    color: var(--bd-dark-color);
-    background-color: var(--bd-light-color);
+    color: var(--bd-dark);
+    background-color: var(--clr-bg);
     font-size: var(--bd-font-size);
     font-weight: var(--bd-font-weight);
     line-height: var(--line-height);
     --webkit-text-size-adjust: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: initial;
+    background-image: url(/img/Blue\ Elegant\ Astronout\ Youtube\ Channel\ Art\ \(1920\ ×\ 1080\ px\).png);
+    background-attachment: fixed;
 }
+
+tr:nth-child(odd) {
+    background-color: #0a4a6e;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(110, 17, 1);
+}
+
+
+table th {
+    color: #000000;
+}
+
+td {
+    color: whitesmoke;
+}
+
+
+
+
+div {
+    color: white
+}
+
+section {
+    color: white;
+}
+
+.corner {
+    border-radius: 25px;
+    border: 2px solid black;
+
+}
+
+
+
 
 
 /*
@@ -206,16 +268,17 @@ body {
     padding-bottom: 6rem;
 }
 
-/*project card*/
+/*project Card*/
 
 .projectCard {
     width: 18rem;
 }
 
+
 /*
 small devices (landcape phones 576px and up)
 */
-@media (min-width: 575.98px) {
+/*@media (min-width: 575.98px) {
     .mainHeader {
         background-image: url(/img/WILLIAM576.jpg);
         height: 274px;
@@ -227,7 +290,7 @@ small devices (landcape phones 576px and up)
         line-height: .5rem;
     }
 
-    /*sizing for logo for header*/
+    /*sizing for logo for header
     .mainLogo {
         height: .6em
     }
@@ -243,9 +306,12 @@ small devices (landcape phones 576px and up)
         font-family: var(--title-font);
         font-size: 4rem;
         line-height: 3.5rem;
+        
     }
 
-    /*sizing for logo for header*/
+    
+
+    /*sizing for logo for header
     .mainLogo {
         height: .6em
     }
@@ -271,7 +337,7 @@ small devices (landcape phones 576px and up)
         line-height: 5.5rem;
     }
 
-    /*sizing for logo for header*/
+    /*sizing for logo for header
     .mainLogo {
         height: .6em
     }
@@ -289,8 +355,102 @@ small devices (landcape phones 576px and up)
         line-height: 5.5rem;
     }
 
-    /*sizing for logo for header*/
+    /*sizing for logo for header
     .mainLogo {
         height: .6em
     }
+}*/
+
+.neon-button {
+    font-size: 1rem;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon 0.125em solid);
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+        0 0 0.125px hsl(0, 0%, 100% / 0.5),
+        0 0 0.45px currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+    position: relative;
+
+}
+
+.neon-button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 65%;
+
+    transform: perspective(1em) rotateX (40deg) scale(1, 0.35);
+
+    filter: blur(1em);
+    opacity: 0.6;
+}
+
+.neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    color: var(rgb(3, 3, 3));
+    font-weight: 400;
+    font-style: var(--fw-bold);
+    text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+
+    opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+
+    opacity: 1;
+}
+
+.car {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background: inherit;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
+
+}
+
+.car:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+    z-index: -1;
 }

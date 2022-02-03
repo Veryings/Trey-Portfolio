@@ -18,58 +18,63 @@
     <!--  customcss -->
     <link rel="stylesheet" href="/css/prism.css">
     <link href="css/sites.css" rel="stylesheet">
-    <link rel="icon" type="img/png" href="img/favicon-32x32.png">
+    <link href="css/site.css" rel="stylesheet">
 
 </head>
 
 <body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarBG">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/MspectreMark.svg" height="24" class="d-inline-block align-text-top">
-                Loan Shark!
-            </a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black" id="mainNav">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#codingchallenge" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown">Coding Challenge</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="calcApp.html">Loan Shark</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="superdog.html">Super Dog</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="fishbuzz2.html">Fish Buzz</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="codehundo.html">Hundo!</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="tacocat.html">Meowlindrome</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="revstring.html">Reverse!</a>
-                            <div class="dropdown-divider"></div>
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0 ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item neon-button btn-outline-dark">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown neon-button btn-outline-dark">
+                                <a class="nav-link dropdown-toggle" href="#codingchallenge" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown">Coding Challenge</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="calcApp.html">Loan Shark</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="superdog.html">Super Dog</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="fishbuzz2.html">Fish Buzz</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="hundo.html">Hundo!</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="tacocat.html">Meowlindrome</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="coderevapp.html">Reverse!</a>
+                                    
 
 
 
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="codeshark.html">RepoDepot</a>
-                    </li>
-                </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item neon-button btn-outline-dark">
+                                <a class="nav-link active" aria-current="page" href="calcApp.html">Loan Shark!</a>
+                            </li>
+                            <li class="nav-item neon-button btn-outline-dark">
+                                <a class="nav-link active" aria-current="page" href="codeshark.html">RepoDepot</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
-        </div>
     </nav>
-
     <main class="flex-shrink-0">
-        <div class="container">
-            <h2 class="border-1 border-bottom border-dark text-black">
+        <div class="container mt-3">
+            <h2 class="border-1 border-bottom border-dark text-light ">
                 The Code
                 <div class="row">
                     <div class="col-12 col-lg-8 text-light">
@@ -223,7 +228,7 @@ function displayData(payments, loanAmount, payment) {
                            </code>
                        </pre>
                     </div>
-                    <div class="col-12 col-lg-4 text-black">
+                    <div class="col-12 col-lg-4 text-light">
                         <P>Using Javascript and HTML, this app ask for user inputted information and maps out loan payments.</P>
                     </div>
                 </div>
@@ -239,7 +244,7 @@ function displayData(payments, loanAmount, payment) {
                     </div>
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                    <img src="img/MarkSpectre_WhtLogo.svg" alt="mark specter logo" height="24">
+                    
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">

@@ -1,7 +1,7 @@
 :root {
     --cf-dark-color: #030303;
     --cf-light-color: #ffffff;
-    --cf-primary-color: #001Ef3;
+    --cf-primary-color: #35395c;
     --cf-secondary-color: #ff993b;
 }
 
@@ -84,5 +84,5 @@ footer .social>a {
 }
 
 footer .social>a:hover {
-    color: var(--cf-secondary-color) opacity:.9;
+    color: var(--cf-secondary-color) opacity .9;
 }

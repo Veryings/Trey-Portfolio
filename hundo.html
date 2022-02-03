@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Fish Buzz: A JS Project</title>
+    <title>Hundo: A JS Project</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,12 +19,11 @@
     <link rel="stylesheet" href="/css/prism.css">
     <link href="css/sites.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
-    
-    <link rel="icon" type="img/png" href="img/favicon-32x32.png">
 
 </head>
 
 <body class="d-flex flex-column h-100">
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black" id="mainNav">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -53,101 +52,75 @@
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="fishbuzz2.html">Fish Buzz</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="codehundo.html">Hundo!</a>
+                                    <a class="dropdown-item" href="hundo.html">Hundo!</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="tacocat.html">Meowlindrome</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="coderevapp.html">Reverse!</a>
-                                    
+
 
 
 
                                 </div>
                             </li>
+
                             <li class="nav-item neon-button btn-outline-dark">
-                                <a class="nav-link active" aria-current="page" href="fishbuzz2.html">Fish Buzz!</a>
-                            </li>
-                            <li class="nav-item neon-button btn-outline-dark">
-                                <a class="nav-link active" aria-current="page" href="codebuzz.html">RepoDepot</a>
+                                <a class="nav-link active" aria-current="page" href="codehundo.html">RepoDepot</a>
                             </li>
                         </ul>
                     </div>
             </div>
     </nav>
+<main class="flex-shrink-0 mt-5">
+    <div class="card mt-5 bg-dark">
+    <div class="container mt-5 bg-dark opacity-75">
+        <div class="row">
+            <div class="col">
+                <h1>Hundo: A Coding Challenge!</h1>
+                <h4 class="lead">
+                    Live life one loop at a time! A javascript application using loops. Write a program that displays
+                    from 0-100. Display the even numbers in <span class="fw-bold">BOLD</span>.
+                </h4>
+                <h2 class="mt-5 border-bottom border-5 border-dark">Instructions</h2>
+                <p>Enter a starting value and a ending value. Press the button and the values will appear.</p>
+            </div>
+            <div class="col">
+                <div>
+                    <h5>Enter Values</h5>
+                    <form class="row">
+                        <div class="col">
+                            <label for="startValue" class="form-label">Start Value</label>
 
-    <main class="flex-shrink-0">
-        <div class="container mt-3">
-            <h2 class="border-1 border-bottom border-dark text-light ">
-                The Code
-                <div class="row">
-                    <div class="col-12 col-lg-8 text-light">
-                        <pre class="line-numbers">
-                           <code class="language-js">
-function getValues() {
-    //These become fizzNumber and buzzNumber - you get the values the same way, but use them in a different part of the code
-    let fizzValue = document.getElementById("fizzValue").value;
-    let buzzValue = document.getElementById("buzzValue").value;
+                            <input id="startValue" name="startValue" type="number" class="form-control"
+                                placeholder="Start Value" value=0 aria-label="Start Value">
 
-    fizzValue = parseInt(fizzValue);
-    buzzValue = parseInt(buzzValue);
+                        </div>
+                        <div class="col">
+                            <label for="endValue" class="form-label">End Value</label>
 
-    if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
-        let fbData = generateData(fizzValue, buzzValue);
-        displayData(fbData);
-
-    } else {
-        alert("You must use numbers");
-    }
-}
-
-
-
-function generateData(fizzValue, buzzValue) {
-    let returnArray = [];
-    let isFizz = false;
-    let isBuzz = false;
-    for (let index = 1; index <= 100; index++) {
-        isFizz = (index % fizzValue == 0);
-        isBuzz = (index % buzzValue == 0);
-        if (isFizz && isBuzz) {
-            returnArray.push('FizzBuzz');
-        } else if (isFizz) {
-            returnArray.push('Fizz');
-        } else if (isBuzz) {
-            returnArray.push('Buzz');
-        } else {
-            returnArray.push(index);
-        }
-    }
-    return returnArray;
-}
-
-
-
-function displayData(fbData) {
-    let contentDiv = document.getElementById("results");
-    let content = "";
-    //erases data
-    contentDiv.innerHTML = "";
-
-    for (let i = 0; i < fbData.length; i++) {
-        let dataValue = fbData[i];
-        let dataElement = `<div class ="col >${dataValue}">${dataValue}</div>`;
-        content += dataElement;
-    }
-    contentDiv.innerHTML = content;
-
-}
-                           </code>
-                       </pre>
-                    </div>
-                    <div class="col-12 col-lg-4 text-light">
-                        <P>Using user input, returns an array of numbers placing fizz, buzz, fizzbuzz, or an integer</P>
+                            <input id="endValue" name="endValue" type="number" class="form-control"
+                                placeholder="End Value" value=100 aria-label="End Value">
+                        </div>
+                        <div class="col-12 d-flex justify-content-start justify-content-lg-end">
+                            <button id="btnSubmit" type="button" class="btn btn-primary btn-large">Display The
+                                Hundo</button>
+                        </div>
+                    </form>
+                    <h2 class="mt-5 border-bottom border-5 border-dark">Results</h2>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped table-sm">
+                            <tbody id="results">
+                                <!--Content Goes Here-->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </h2>
+            </div>
         </div>
-    </main>
+    </div>
+    </div>
+    </div>
+</main>
     <footer class="footer mt-auto py-3  sticky-footer">
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
@@ -157,14 +130,13 @@ function displayData(fbData) {
                     </div>
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                    
+
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
                         <div class="col social">
                             <a href="#">
-                                <i class="fab fa-linkedin fa-2x" aria-hidden="true"
-                                    href="https://www.linkedin.com/in/william-ogburn-22b15b168/"></i>
+                                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
@@ -195,7 +167,11 @@ function displayData(fbData) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <script src="/js/prism.js"></script>
-</body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/hundo.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValues);
+    </script>
+    </body>
 
-</html>
+    </html>

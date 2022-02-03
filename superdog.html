@@ -16,131 +16,139 @@
 
 
     <!--  customcss -->
-    <link href="css/superdog.css" rel="stylesheet">
-    <link rel="icon" type="img/png" href="img/favicon-32x32.png">
-
+    <link rel="stylesheet" href="/css/prism.css">
+    <link href="css/sites.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/sitedog.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarBG">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/MspectreMark.svg" height="24" class="d-inline-block align-text-top">
-                Super Dog!
-            </a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black" id="mainNav">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#codingchallenge" id="navbarDropdown" role="button"
-                             data-bs-toggle="dropdown">Coding Challenge</a>
-                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="calcApp.html">Loan Shark</a>
-                             <div class="dropdown-divider"></div>
-                             <a class="dropdown-item" href="superdog.html">Super Dog</a>
-                             <div class="dropdown-divider"></div>
-                             <a class="dropdown-item" href="fishbuzz2.html">Fish Buzz</a>
-                             <div class="dropdown-divider"></div>
-                             <a class="dropdown-item" href="codehundo.html">Hundo!</a>
-                             <div class="dropdown-divider"></div>
-                             <a class="dropdown-item" href="tacocat.html">Meowlindrome</a>
-                             <div class="dropdown-divider"></div>
-                             <a class="dropdown-item" href="revstring.html">Reverse!</a>
-                             <div class="dropdown-divider"></div>
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0 ">
+                    <button class="navbar-toggler neon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item neon-button btn-outline-dark">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown neon-button btn-outline-dark">
+                                <a class="nav-link dropdown-toggle" href="#codingchallenge" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown">Coding Challenge</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="calcApp.html">Loan Shark</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="superdog.html">Super Dog</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="fishbuzz2.html">Fish Buzz</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="hundo.html">Hundo!</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="tacocat.html">Meowlindrome</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="coderevapp.html">Reverse!</a>
 
 
 
-                         </div>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="codedog.html">RepoDepot</a>
-                     </li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
+                                </div>
+                            </li>
 
-    <main class="flex-shrink-0">
-        <div class="container mt-5 mb-5">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col-12 col-lg-5">
-
-                    <div class="btn-group" role="group">
-                        <button id="btnCityDrop" type="button" class="btn btn-warning dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-
-                            Pick Location
-                        </button>
-                        <ul class="dropdown-menu" id="eventDropDown" aria-labelledby="btnCityDrop">
-                            <!--menu items go here-->
-
+                            <li class="nav-item neon-button btn-outline-dark">
+                                <a class="nav-link active" aria-current="page" href="codedog.html">RepoDepot</a>
+                            </li>
                         </ul>
                     </div>
-                </div>
             </div>
-            <div class="col-6">
-                <table class="table table-striped">
-                    <tr>
-                        <th colspan="2" id="statsHeader">Stats For All Events </th>
-                    </tr>
-                    <tr>
-                        <td>Total Attendance</td>
-                        <td id="total">100</td>
-                    </tr>
-                    <tr>
-                        <td>Average Attendance</td>
-                        <td id="average">100</td>
-                    </tr>
-                    <tr>
-                        <td>Most Attended</td>
-                        <td id="most">100</td>
-                    </tr>
-                    <tr>
-                        <td>Least Attended</td>
-                        <td id="least">100</td>
-                    </tr>
+    </nav>
 
-                </table>
-            </div>
+    <main class="flex-shrink-0 mt-5">
+        <div class="card bg-transparent">
+            <div class="container mt-5 mb-5">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col-12 col-lg-5 mt-3">
 
-            <div class="row">
-                <div class="col">
+                        <div class="btn-group mb-2" role="group">
+                            <a id="btnCityDrop" href="javascript:void()" type="button"
+                                class="neon-button bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
 
-                </div>
-            </div>
+                                Pick Location
+                        </a>
+                            <ul class="dropdown-menu" id="eventDropDown" aria-labelledby="btnCityDrop">
+                                <!--menu items go here-->
 
-
-            <div class="row">
-                <div class="col">
-                    <div class="container-fluid d-flex justify-content-end">
-                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addData">Add
-                            Data</button>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <table class="table table-striped" id="eventData">
-                    <thead>
+                <div class="col-6 p-2">
+                    <table class="table table-striped">
                         <tr>
-                            <th>Event Name</th>
-                            <th>Event City</th>
-                            <th>State</th>
-                            <th>Attendance</th>
-                            <th>Event Date</th>
+                            <th class=" text-light bg-dark" colspan="2" id="statsHeader">Stats For All Events </th>
                         </tr>
-                    </thead>
-                    <tbody id="eventBody">
+                        <tr>
+                            <td>Total Attendance</td>
+                            <td id="total">100</td>
+                        </tr>
+                        <tr>
+                            <td>Average Attendance</td>
+                            <td id="average">100</td>
+                        </tr>
+                        <tr>
+                            <td>Most Attended</td>
+                            <td id="most">100</td>
+                        </tr>
+                        <tr>
+                            <td>Least Attended</td>
+                            <td id="least">100</td>
+                        </tr>
 
-                    </tbody>
-                </table>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="container-fluid d-flex justify-content-end">
+                            <a class="neon-button bg-black" data-bs-toggle="modal"
+                                data-bs-target="#addData">Add
+                                Data</a>
+                        </div>
+                    </div>
+                    <table class="table table-striped p-2" id="eventData">
+                        <thead>
+                            <tr class= "bg-dark">
+                                <th class=" text-light">Event Name</th>
+                                <th class=" text-light">Event City</th>
+                                <th class=" text-light">State</th>
+                                <th class=" text-light">Attendance</th>
+                                <th class=" text-light">Event Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="eventBody">
+
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
-
         </div>
     </main>
     <footer class="footer mt-auto py-3  sticky-footer">
@@ -152,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                    <img src="img/MarkSpectre_WhtLogo.svg" alt="mark specter logo" height="24">
+
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
@@ -192,7 +200,7 @@
             <div class="modal-content">
                 <!--modal header goes here-->
                 <div class="modal-header">
-                    <h4 class="modal-title">Add A New Event!</h4>
+                    <h4 class="modal-title text-dark">Add A New Event!</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -283,7 +291,7 @@
     </div>
 
     <!--------------------------------------Templates--------------------------------------------->
-    /*template tag*/
+    
     <template id="eventData-template">
         <tr>
             <td> data-id ="event"</td>

@@ -2,7 +2,7 @@
 function calcPayment(amount, rate, term) {
     return (amount * rate) / (1 - Math.pow(1 + rate, -term));
 }
-
+    
 
 
 

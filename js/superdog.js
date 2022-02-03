@@ -220,9 +220,15 @@ function displayData() {
         curEvents = events;
         localStorage.setItem("eventsArray", JSON.stringify(curEvents));
     }
-
+    let counter = 1;
     for (let index = 0; index < curEvents.length; index++) {
         let eventRow = document.importNode(template.content, true);
+        let individualRow = eventRow.querySelector("tr");
+        if (counter % 2 == 0) {
+            individualRow.classList.add("evenRow");
+        } else {
+            individualRow.classList.add("oddRow");
+        }
         let eventCols = eventRow.querySelectorAll("td");
 
         eventCols[0].textContent = curEvents[index].event;
@@ -232,7 +238,7 @@ function displayData() {
         eventCols[4].textContent = curEvents[index] = new Date(curEvents[index].date).toLocaleDateString();
 
         eventBody.appendChild(eventRow);
-
+        counter++;
     }
 
 }
