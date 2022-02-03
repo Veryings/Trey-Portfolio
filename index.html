@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/sites.css">
     <link rel="stylesheet" href="/css/prism.css">
-    
+
 </head>
 
 <body class="">
@@ -58,6 +58,11 @@
                         <li class="nav-item neon-button btn-outline-dark">
                             <a class="nav-link" href="#blog">Blog</a>
                         </li>
+
+
+
+
+
                         <li class="nav-item neon-button btn-outline-dark dropdown">
                             <a class="nav-link dropdown-toggle" href="#codingchallenge" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown">Coding Challenge</a>
@@ -73,7 +78,7 @@
                                 <a class="dropdown-item" href="tacocat.html">Meowlindrome</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="coderevapp.html">Reverse!</a>
-                                
+
 
 
 
@@ -294,7 +299,7 @@
             <section class="row section-page text-light bg-dark corner bg-opacity-75 mb-5" id="projects">
                 <h1>Projects</h1>
             </section>
-            
+
             <section class="row section-page bg-dark corner text-light bg-opacity-75 mb-5" id="blog">
                 <h1>Blog</h1>
             </section>
@@ -302,15 +307,17 @@
 
                 <div class="col-12"></div>
                 <h1>Coding Challenges!</h1>
-                <p> 
-                    No sweat, these challenges demonstrate my ability to use css, javascript, and html to create functiional apps.
+                <p>
+                    No sweat, these challenges demonstrate my ability to use css, javascript, and html to create
+                    functiional apps.
                 </p>
                 </div>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 gy-5">
                     <div class="col d-flex justify-content-center justify-content-md-start">
                         <div class="card projectCard">
-                            <img src="img/Blue Minimal Shark Fin Logo.png" class="card-img-top img-fluid" alt="Loan Shark">
+                            <img src="img/Blue Minimal Shark Fin Logo.png" class="card-img-top img-fluid"
+                                alt="Loan Shark">
                             <div class="card-body bg-dark">
                                 <h5 class="card-title\">TroubleSnooper</h5>
                                 <p class="card-text">
@@ -363,7 +370,8 @@
                 <div class="row row-cols-1 row-cols-md-3 gy-5">
                     <div class="col d-flex justify-content-center justify-content-md-start">
                         <div class="card projectCard">
-                            <img src="/img/Textured Heart Shaped Steak Silhouette Butcher Shop Logo.png" class="card-img-top img-fluid" alt="Bug Tracker">
+                            <img src="/img/Textured Heart Shaped Steak Silhouette Butcher Shop Logo.png"
+                                class="card-img-top img-fluid" alt="Bug Tracker">
                             <div class="card-body bg-dark">
                                 <h5 class="card-title\">TroubleSnooper</h5>
                                 <p class="card-text">
@@ -415,727 +423,726 @@
                     </div>
                 </div>
 
-            <section class=" row section-page" id="contact">
-                <div class="container text-light bg-dark corner bg-opacity-75">
-                    <h1> Contact Me:</h1>
-                    <div class="p-3 border border-2 bg-dark corner bg-opacity-75" id="formContainingDiv">
-                        <form name="contactForm" class="row g-3 p-2" netlify data-netlify-recaptcha="true">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="inputFirstName" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" name="firstName" required />
+                <section class=" row section-page" id="contact">
+                    <div class="container text-light bg-dark corner bg-opacity-75">
+                        <h1> Contact Me:</h1>
+                        <div class="p-3 border border-2 bg-dark corner bg-opacity-75" id="formContainingDiv">
+                            <form name="contactForm" class="row g-3 p-2" data-netlify="true"
+                                data-netlify-recaptcha="true">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 form-group">
+                                            <label for="inputFirstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" name="firstName" required />
 
 
-                                    </div>
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="inputLastName" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" name="lastName" required />
-                                    </div>
-                                    <div class="col-12 col-md-4 form-group">
-                                        <label for="inputEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control" name="email" required
-                                            placeholder="example@email.com" />
-
-                                    </div>
-                                    <div class="col-12 col-md-4 form-group">
-                                        <label for="inputPhone" class="form-label">Phone</label>
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="555-555-0101" />
-                                    </div>
-
-
-                                    <div class="col-12 col-md-4 form-group">
-                                        <label for="inputContactReason" class="form-label">Reason</label>
-                                        <select class="form-select" name="contactReason">
-                                            <option>Choose one...</option>
-                                            <option value="freelance">Freelance Work</option>
-                                            <option value="contract">Contract Work</option>
-                                            <option value="personal">Personal</option>
-                                            <option value="other">Other</option>
-                                        </select>
-
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <label for="inputMessage" class="form-label">Message</label>
-                                        <textarea type="text" class="form-control" rows="4"
-                                            placeholder="Write your message here..." required></textarea>
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <label for="howYouHear" class="form-label">How did you hear about me?</label>
-
-
-
-                                        <div class="form-check form-check-inline">
-                                            <label for="inputFunnel" class="form-check-label">Print</label>
-                                            <input type="checkbox" value="print" class="form-check-input"
-                                                name="funnel" />
                                         </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <label for="inputFunnel" class="form-check-label">Friends</label>
-                                            <input type="checkbox" value="print" class="form-check-input"
-                                                name="funnel" />
+                                        <div class="col-12 col-md-6 form-group">
+                                            <label for="inputLastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" name="lastName" required />
                                         </div>
+                                        <div class="col-12 col-md-4 form-group">
+                                            <label for="inputEmail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email" required
+                                                placeholder="example@email.com" />
 
-                                        <div class="form-check form-check-inline">
-                                            <label for="inputFunnel" class="form-check-label">Online</label>
-                                            <input type="checkbox" value="print" class="form-check-input"
-                                                name="funnel" />
                                         </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <label for="inputFunnel" class="form-check-label">linkdin</label>
-                                            <input type="checkbox" value="print" class="form-check-input"
-                                                name="funnel" />
+                                        <div class="col-12 col-md-4 form-group">
+                                            <label for="inputPhone" class="form-label">Phone</label>
+                                            <input type="tel" class="form-control" name="phone"
+                                                placeholder="555-555-0101" />
                                         </div>
 
 
-                                    </div>
-                                    <div data-netlify-recaptcha="true">
+                                        <div class="col-12 col-md-4 form-group">
+                                            <label for="inputContactReason" class="form-label">Reason</label>
+                                            <select class="form-select" name="contactReason">
+                                                <option>Choose one...</option>
+                                                <option value="freelance">Freelance Work</option>
+                                                <option value="contract">Contract Work</option>
+                                                <option value="personal">Personal</option>
+                                                <option value="other">Other</option>
+                                            </select>
 
-                                    </div>
-                                    <div class="col-12 d-flex justify-content-center pt-2">
-                                        <a href="javascript:void()" class="neon-button btn-outline-dark type="
-                                            submit">Submit</a>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <label for="inputMessage" class="form-label">Message</label>
+                                            <textarea type="text" class="form-control" rows="4"
+                                                placeholder="Write your message here..." required></textarea>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <label for="howYouHear" class="form-label">How did you hear about
+                                                me?</label>
 
+
+
+                                            <div class="form-check form-check-inline">
+                                                <label for="inputFunnel" class="form-check-label">Print</label>
+                                                <input type="checkbox" value="print" class="form-check-input"
+                                                    name="funnel" />
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <label for="inputFunnel" class="form-check-label">Friends</label>
+                                                <input type="checkbox" value="print" class="form-check-input"
+                                                    name="funnel" />
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <label for="inputFunnel" class="form-check-label">Online</label>
+                                                <input type="checkbox" value="print" class="form-check-input"
+                                                    name="funnel" />
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <label for="inputFunnel" class="form-check-label">linkdin</label>
+                                                <input type="checkbox" value="print" class="form-check-input"
+                                                    name="funnel" />
+                                            </div>
+
+
+                                        </div>
+                                        <div data-netlify-recaptcha="true">
+
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center pt-2">
+                                            <a class="neon-button btn-outline-dark type="
+                                                submit">Submit</a>
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                </form>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
         </main>
-        <footer class="footer mt-auto py-3  sticky-footer">
-            <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-lg-3 gy-2">
-                    <div class="col order-last order-lg-first ">
-                        <div>
-                            <span class="text-muted">&copy;2022</span><span> William Ogburn | wogburn13@gmail.com</span>
+    </main>
+    <footer class="footer mt-auto py-3 sticky-footer">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-3 gy-2">
+                <div class="col order-last order-lg-first ">
+                    <div>
+                        <span class="text-muted">&copy;2022</span><span> William Ogburn | wogburn13@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="row">
+                        <div class="col social">
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                        <div class="col social">
+                            <a href="#">
+                                <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                        <div class="col social">
+                            <a href="#">
+                                <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                        <div class="col social">
+                            <a href="#">
+                                <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+                            </a>
+
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
 
-                    </div>
-                    <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                </div>
+            </div>
+    </footer>
+
+    <!--modals-->
+    <!--Bug Tracker-->
+    <div class="modal fade" id="BugTrackerModal" tabindex="-1" aria-labelledby="BugTrackerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BugTrackerModalLabel">Insecticide</h5>
+                    <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="container">
                         <div class="row">
-                            <div class="col social">
-                                <a href="#">
-                                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-                                </a>
-
-                            </div>
-                            <div class="col social">
-                                <a href="#">
-                                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                                </a>
-
-                            </div>
-                            <div class="col social">
-                                <a href="#">
-                                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
-                                </a>
-
-                            </div>
-                            <div class="col social">
-                                <a href="#">
-                                    <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-        </footer
-
-        <!--modals-->
-        <!--Bug Tracker-->
-        <div class="modal fade" id="BugTrackerModal" tabindex="-1" aria-labelledby="BugTrackerModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="BugTrackerModalLabel">Insecticide</h5>
-                        <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-
-                    </div>
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <!--carousel-->
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselBugTracker"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselBugTracker"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselBugTracker"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="/img/Logos/logos/BugTracker2.jpg" class="d-block w-100"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselBugTracker" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselBugTracker" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                            <div class="col-12 col-md-5">
+                                <!--carousel-->
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
                                     </div>
-
-
-                                    <!--End Carousel-->
-                                </div>
-                                <div class="col-12 col-md-7">
-                                    <h3>Insecticide</h3>
-                                    <div>
-                                        <p>
-                                            Insecticide is a software defect tracking system.
-                                            Commonly known as a bug tracker. Insectcide is built
-                                            with ASP.NET, MVC, C# and SQL. A role based security
-                                            system was implemented to create permission based roles.
-                                            The roles of Admin , Project Manager, Developer and
-                                            Submitter restrict what the user can see and do. The
-                                            software allows for users to submit tickets and those
-                                            tickets are tracked through status from Open to
-                                            Complete.
-
-                                        </p>
-                                        <p>
-                                            The system was built with C# and .Net in 3 weeks. The
-                                            front end was developed with HTML, Javascript and
-                                            Bootstrap. The backend utlizies MVC and C#. The database
-                                            was built with SQL Server and hosted on Azure. Please
-                                            visit the site and try it out.
-
-                                        </p>
-                                    </div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <h4>Project Type:</h4>Web Application
-                                        </li>
-                                        <li class="list-group-item">
-                                            <h4>Technologies:</h4>
-                                            <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h1></h1>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">View Site</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="ExpenseModal" tabindex="-1" aria-labelledby="ExpenseModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id=ExpenseModalLabel>Nickel and Dime</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <!--carousel two-->
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="0"
-                                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="1"
-                                                aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="2"
-                                                aria-label="Slide 3"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="/img/Logos/logos/ExpenseTracker2.jpg" class="d-block w-100"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExpense" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" z
-                                            data-bs-target="#carouselExpense" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <!--end carousel two-->
-
-
-                                </div>
-                                <div class="col-12 col-md-7">
-                                    <h3>Insecticide</h3>
-                                    <div>
-                                        <p>
-                                            Insecticide is a software defect tracking system.
-                                            Commonly known as a bug tracker. Insectcide is built
-                                            with ASP.NET, MVC, C# and SQL. A role based security
-                                            system was implemented to create permission based roles.
-                                            The roles of Admin , Project Manager, Developer and
-                                            Submitter restrict what the user can see and do. The
-                                            software allows for users to submit tickets and those
-                                            tickets are tracked through status from Open to
-                                            Complete.
-
-                                        </p>
-                                        <p>
-                                            The system was built with C# and .Net in 3 weeks. The
-                                            front end was developed with HTML, Javascript and
-                                            Bootstrap. The backend utlizies MVC and C#. The database
-                                            was built with SQL Server and hosted on Azure. Please
-                                            visit the site and try it out.
-
-                                        </p>
-                                    </div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <h4>Project Type:</h4>Web Application
-                                        </li>
-                                        <li class="list-group-item">
-                                            <h4>Technologies:</h4>
-                                            <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">View Site</button>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div modal class="modal fade" id="SharkModal" tabindex="-1" aria-labelledby="LoanSharkLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                <div class="modal-content text-light">
-                    <div class="modal-header bg-black">
-                        <h5 class="modal-title" id="LoanSharkLabel">Take a byte out of loans.</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                    </div>
-                    <div class="modal-body bg-black">
-                        <div class="row">
-                            <div class="col col-md-5">
-                                
-                                   
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/img/Blue Minimal Shark Fin Logo.png" class="d-block w-100" alt="...">
+                                            <img src="/img/Logos/logos/BugTracker2.jpg" class="d-block w-100" alt="...">
                                         </div>
-                                        
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
-                                   
-                                    <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
-                                        data-bs-slide="next">
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselBugTracker" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselBugTracker" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
-                                
+                                </div>
+
+
+                                <!--End Carousel-->
                             </div>
-                            <!--carousel 3-->
                             <div class="col-12 col-md-7">
-                                <h3>Loan Shark</h3>
+                                <h3>Insecticide</h3>
                                 <div>
                                     <p>
-                                        Loan Shark is a program designed to take user loan information and return a table showing their monthly payments from start to end.
+                                        Insecticide is a software defect tracking system.
+                                        Commonly known as a bug tracker. Insectcide is built
+                                        with ASP.NET, MVC, C# and SQL. A role based security
+                                        system was implemented to create permission based roles.
+                                        The roles of Admin , Project Manager, Developer and
+                                        Submitter restrict what the user can see and do. The
+                                        software allows for users to submit tickets and those
+                                        tickets are tracked through status from Open to
+                                        Complete.
 
                                     </p>
                                     <p>
-                                        The system was built with CSS, JavaScript, and HTML. 
-                                        
+                                        The system was built with C# and .Net in 3 weeks. The
+                                        front end was developed with HTML, Javascript and
+                                        Bootstrap. The backend utlizies MVC and C#. The database
+                                        was built with SQL Server and hosted on Azure. Please
+                                        visit the site and try it out.
 
                                     </p>
                                 </div>
                                 <ul class="list-group">
                                     <li class="list-group-item">
-                                        <h4>Project Type:</h4>Loan Shark!
+                                        <h4>Project Type:</h4>Web Application
                                     </li>
                                     <li class="list-group-item">
                                         <h4>Technologies:</h4>
-                                        <p> CSS, JS, HTML5</p>
+                                        <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
                                     </li>
                                 </ul>
 
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer bg-black">
-                        <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                        <a type="button" href="calcApp.html" class="neon-button btn-outline-dark">View Site</a>
-
+                    <div>
+                        <h1></h1>
                     </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Site</button>
+
                 </div>
             </div>
         </div>
-         <div modal class="modal fade" id="FishModal" tabindex="-1" aria-labelledby="FishLabel"
-             aria-hidden="true">
-             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                 <div class="modal-content text-light">
-                     <div class="modal-header bg-black">
-                         <h5 class="modal-title" id="FishLabel">Take a byte out of loans.</h5>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                     </div>
-                     <div class="modal-body bg-black">
-                         <div class="row">
-                             <div class="col col-md-5">
+    </div>
 
-
-                                 <div class="carousel-inner">
-                                     <div class="carousel-item active">
-                                         <img src="/img/Fish Buzz 3.jpg" class="d-block w-100"
-                                             alt="...">
-                                     </div>
-
-                                 </div>
-
-                                 <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
-                                     data-bs-slide="next">
-                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                     <span class="visually-hidden">Next</span>
-                                 </button>
-
-                             </div>
-                             <!--carousel 3-->
-                             <div class="col-12 col-md-7">
-                                 <h3>Fish Buzz</h3>
-                                 <div>
-                                     <p>
-                                         Live life one loop at a time! A javascript application using loops. Write a
-                                         program that displays from 0-100. Displaying either Fish, Buzz, or FishBuzz 
-                                         depending on the user define parameters. 
-
-                                     </p>
-                                     <p>
-                                         The system was built with CSS, JavaScript, and HTML.
-
-
-                                     </p>
-                                 </div>
-                                 <ul class="list-group">
-                                     <li class="list-group-item">
-                                         <h4>Project Type:</h4>Fish!
-                                     </li>
-                                     <li class="list-group-item">
-                                         <h4>Technologies:</h4>
-                                         <p> CSS, JS, HTML5</p>
-                                     </li>
-                                 </ul>
-
-                             </div>
-                         </div>
-                     </div>
-                     <div class="modal-footer bg-black">
-                         <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                         <a type="button" href="fishbuzz2.html" class="neon-button btn-outline-dark">View Site</a>
-
-                     </div>
-                 </div>
-             </div>
-         </div>
-          <div modal class="modal fade" id="HundoModal" tabindex="-1" aria-labelledby="HundoLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                  <div class="modal-content text-light">
-                      <div class="modal-header bg-black">
-                          <h5 class="modal-title" id="HundoLabel">Count to 100.</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                      </div>
-                      <div class="modal-body bg-black">
-                          <div class="row">
-                              <div class="col col-md-5">
-
-
-                                  <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                          <img src="/img/Textured Heart Shaped Steak Silhouette Butcher Shop Logo.png" class="d-block w-100"
-                                              alt="...">
-                                      </div>
-
-                                  </div>
-
-                                  <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
-                                      data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                  </button>
-
-                              </div>
-                              <!--carousel 3-->
-                              <div class="col-12 col-md-7">
-                                  <h3>Hundo</h3>
-                                  <div>
-                                      <p>
-                                            This app counts to 100. Warning: The even numbers are bold. 
-
-                                      </p>
-                                      <p>
-                                          The system was built with CSS, JavaScript, and HTML.
-
-
-                                      </p>
-                                  </div>
-                                  <ul class="list-group">
-                                      <li class="list-group-item">
-                                          <h4>Project Type:</h4>Hundo!
-                                      </li>
-                                      <li class="list-group-item">
-                                          <h4>Technologies:</h4>
-                                          <p> CSS, JS, HTML5</p>
-                                      </li>
-                                  </ul>
-
-                              </div>
-                          </div>
-                      </div>
-                      <div class="modal-footer bg-black">
-                          <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                          <a type="button" href="hundo.html" class="neon-button btn-outline-dark">View Site</a>
-
-                      </div>
-                  </div>
-              </div>
-          </div>
-           <div modal class="modal fade" id="DogModal" tabindex="-1" aria-labelledby="DogLabel"
-               aria-hidden="true">
-               <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                   <div class="modal-content text-light">
-                       <div class="modal-header bg-black">
-                           <h5 class="modal-title" id="DogLabel">Super Dog!</h5>
-                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                       </div>
-                       <div class="modal-body bg-black">
-                           <div class="row">
-                               <div class="col col-md-5">
-
-
-                                   <div class="carousel-inner">
-                                       <div class="carousel-item active">
-                                           <img src="/img/Cute Dog illustration Pet Logo.png" class="d-block w-100"
-                                               alt="...">
-                                       </div>
-
-                                   </div>
-
-                                   <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
-                                       data-bs-slide="next">
-                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                       <span class="visually-hidden">Next</span>
-                                   </button>
-
-                               </div>
-                               <!--carousel 3-->
-                               <div class="col-12 col-md-7">
-                                   <h3>Super Dog!</h3>
-                                   <div>
-                                       <p>
-                                           A table that displays numerous calculations using user inputed information, using stadium attendance as a reference.
-
-                                       </p>
-                                       <p>
-                                           The system was built with CSS, JavaScript, and HTML.
-
-
-                                       </p>
-                                   </div>
-                                   <ul class="list-group">
-                                       <li class="list-group-item">
-                                           <h4>Project Type:</h4>Super Dog!
-                                       </li>
-                                       <li class="list-group-item">
-                                           <h4>Technologies:</h4>
-                                           <p> CSS, JS, HTML5</p>
-                                       </li>
-                                   </ul>
-
-                               </div>
-                           </div>
-                       </div>
-                       <div class="modal-footer bg-black">
-                           <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                           <a type="button" href="superdog.html" class="neon-button btn-outline-dark">View Site</a>
-
-                       </div>
-                   </div>
-               </div>
-           </div>
-            <div modal class="modal fade" id="CatModal" tabindex="-1" aria-labelledby="RevLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                    <div class="modal-content text-light">
-                        <div class="modal-header bg-black">
-                            <h5 class="modal-title" id="CatLabel">Paws to the walls with Meowindrome!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                        </div>
-                        <div class="modal-body bg-black">
-                            <div class="row">
-                                <div class="col col-md-5">
-
-
+    <div class="modal fade" id="ExpenseModal" tabindex="-1" aria-labelledby="ExpenseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id=ExpenseModalLabel>Nickel and Dime</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <!--carousel two-->
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExpense" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/img/Cute Cat illustration Bread & Candy Food Logo.png"
-                                                class="d-block w-100" alt="...">
+                                            <img src="/img/Logos/logos/ExpenseTracker2.jpg" class="d-block w-100"
+                                                alt="...">
                                         </div>
-
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
-
-                                    <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
-                                        data-bs-slide="next">
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExpense" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" z
+                                        data-bs-target="#carouselExpense" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
-
                                 </div>
-                                <!--carousel 3-->
-                                <div class="col-12 col-md-7">
-                                    <h3>Meowindrome!</h3>
-                                    <div>
-                                        <p>
-                                            A cat will tell you when to back off, this app just tells you if the input
-                                            is a palindrome.
-
-                                        </p>
-                                        <p>
-                                            The system was built with CSS, JavaScript, and HTML.
+                                <!--end carousel two-->
 
 
-                                        </p>
-                                    </div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <h4>Project Type:</h4>Meowindrome!
-                                        </li>
-                                        <li class="list-group-item">
-                                            <h4>Technologies:</h4>
-                                            <p> CSS, JS, HTML5</p>
-                                        </li>
-                                    </ul>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <h3>Insecticide</h3>
+                                <div>
+                                    <p>
+                                        Insecticide is a software defect tracking system.
+                                        Commonly known as a bug tracker. Insectcide is built
+                                        with ASP.NET, MVC, C# and SQL. A role based security
+                                        system was implemented to create permission based roles.
+                                        The roles of Admin , Project Manager, Developer and
+                                        Submitter restrict what the user can see and do. The
+                                        software allows for users to submit tickets and those
+                                        tickets are tracked through status from Open to
+                                        Complete.
 
+                                    </p>
+                                    <p>
+                                        The system was built with C# and .Net in 3 weeks. The
+                                        front end was developed with HTML, Javascript and
+                                        Bootstrap. The backend utlizies MVC and C#. The database
+                                        was built with SQL Server and hosted on Azure. Please
+                                        visit the site and try it out.
+
+                                    </p>
                                 </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <h4>Project Type:</h4>Web Application
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4>Technologies:</h4>
+                                        <p> C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5</p>
+                                    </li>
+                                </ul>
+
                             </div>
                         </div>
-                        <div class="modal-footer bg-black">
-                            <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                            <a type="button" href="tacocat.html" class="neon-button btn-outline-dark">View Site</a>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Site</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div modal class="modal fade" id="SharkModal" tabindex="-1" aria-labelledby="LoanSharkLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content text-light">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="LoanSharkLabel">Take a byte out of loans.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body bg-black">
+                    <div class="row">
+                        <div class="col col-md-5">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/Blue Minimal Shark Fin Logo.png" class="d-block w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                            <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Loan Shark</h3>
+                            <div>
+                                <p>
+                                    Loan Shark is a program designed to take user loan information and return a
+                                    table showing their monthly payments from start to end.
+
+                                </p>
+                                <p>
+                                    The system was built with CSS, JavaScript, and HTML.
+
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Loan Shark!
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> CSS, JS, HTML5</p>
+                                </li>
+                            </ul>
 
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer bg-black">
+                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="calcApp.html" class="neon-button btn-outline-dark">View Site</a>
+
+                </div>
             </div>
-            <div modal class="modal fade" id="RevModal" tabindex="-1" aria-labelledby="RevLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-                    <div class="modal-content text-light">
-                        <div class="modal-header bg-black">
-                            <h5 class="modal-title" id="CatLabel">Paws to the walls with Meowindrome!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                        </div>
-                        <div class="modal-body bg-black">
-                            <div class="row">
-                                <div class="col col-md-5">
+        </div>
+    </div>
+    <div modal class="modal fade" id="FishModal" tabindex="-1" aria-labelledby="FishLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content text-light">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="FishLabel">Take a byte out of loans.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body bg-black">
+                    <div class="row">
+                        <div class="col col-md-5">
 
 
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/img/Beige Minimalist Circle Line Art Initials Logo.png"
-                                                class="d-block w-100" alt="...">
-                                        </div>
-
-                                    </div>
-
-                                    <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
-                                        data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/Fish Buzz 3.jpg" class="d-block w-100" alt="...">
                                 </div>
-                                <!--carousel 3-->
-                                <div class="col-12 col-md-7">
-                                    <h3>Put it in reverse Terry!</h3>
-                                    <div>
-                                        <p>
-                                            Enter a string, click the button, enjoy shenangigans
 
-                                        </p>
-                                        <p>
-                                            The system was built with CSS, JavaScript, and HTML.
-
-
-                                        </p>
-                                    </div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <h4>Project Type:</h4>Reverse!
-                                        </li>
-                                        <li class="list-group-item">
-                                            <h4>Technologies:</h4>
-                                            <p> CSS, JS, HTML5</p>
-                                        </li>
-                                    </ul>
-
-                                </div>
                             </div>
+
+                            <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
                         </div>
-                        <div class="modal-footer bg-black">
-                            <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                            <a type="button" href="coderevapp.html" class="neon-button btn-outline-dark">View Site</a>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Fish Buzz</h3>
+                            <div>
+                                <p>
+                                    Live life one loop at a time! A javascript application using loops. Write a
+                                    program that displays from 0-100. Displaying either Fish, Buzz, or FishBuzz
+                                    depending on the user define parameters.
+
+                                </p>
+                                <p>
+                                    The system was built with CSS, JavaScript, and HTML.
+
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Fish!
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> CSS, JS, HTML5</p>
+                                </li>
+                            </ul>
 
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="modal-footer bg-black">
+                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="fishbuzz2.html" class="neon-button btn-outline-dark">View Site</a>
 
-        
-       
-                    
                 </div>
             </div>
         </div>
+    </div>
+    <div modal class="modal fade" id="HundoModal" tabindex="-1" aria-labelledby="HundoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content text-light">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="HundoLabel">Count to 100.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body bg-black">
+                    <div class="row">
+                        <div class="col col-md-5">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/Textured Heart Shaped Steak Silhouette Butcher Shop Logo.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                            <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Hundo</h3>
+                            <div>
+                                <p>
+                                    This app counts to 100. Warning: The even numbers are bold.
+
+                                </p>
+                                <p>
+                                    The system was built with CSS, JavaScript, and HTML.
+
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Hundo!
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> CSS, JS, HTML5</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-black">
+                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="hundo.html" class="neon-button btn-outline-dark">View Site</a>
+
+                </div>
+            </div>
         </div>
+    </div>
+    <div modal class="modal fade" id="DogModal" tabindex="-1" aria-labelledby="DogLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content text-light">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="DogLabel">Super Dog!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body bg-black">
+                    <div class="row">
+                        <div class="col col-md-5">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/Cute Dog illustration Pet Logo.png" class="d-block w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                            <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Super Dog!</h3>
+                            <div>
+                                <p>
+                                    A table that displays numerous calculations using user inputed information,
+                                    using stadium attendance as a reference.
+
+                                </p>
+                                <p>
+                                    The system was built with CSS, JavaScript, and HTML.
+
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Super Dog!
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> CSS, JS, HTML5</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-black">
+                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="superdog.html" class="neon-button btn-outline-dark">View Site</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div modal class="modal fade" id="CatModal" tabindex="-1" aria-labelledby="RevLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content text-light">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="CatLabel">Paws to the walls with Meowindrome!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body bg-black">
+                    <div class="row">
+                        <div class="col col-md-5">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/Cute Cat illustration Bread & Candy Food Logo.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                            <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Meowindrome!</h3>
+                            <div>
+                                <p>
+                                    A cat will tell you when to back off, this app just tells you if the input
+                                    is a palindrome.
+
+                                </p>
+                                <p>
+                                    The system was built with CSS, JavaScript, and HTML.
+
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Meowindrome!
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> CSS, JS, HTML5</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-black">
+                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="tacocat.html" class="neon-button btn-outline-dark">View Site</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div modal class="modal fade" id="RevModal" tabindex="-1" aria-labelledby="RevLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content text-light">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="CatLabel">Paws to the walls with Meowindrome!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body bg-black">
+                    <div class="row">
+                        <div class="col col-md-5">
+
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/Beige Minimalist Circle Line Art Initials Logo.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                            <button class="carousel-control-next" type="button" z data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                        </div>
+                        <!--carousel 3-->
+                        <div class="col-12 col-md-7">
+                            <h3>Put it in reverse Terry!</h3>
+                            <div>
+                                <p>
+                                    Enter a string, click the button, enjoy shenangigans
+
+                                </p>
+                                <p>
+                                    The system was built with CSS, JavaScript, and HTML.
+
+
+                                </p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>Reverse!
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p> CSS, JS, HTML5</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-black">
+                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="coderevapp.html" class="neon-button btn-outline-dark">View Site</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
