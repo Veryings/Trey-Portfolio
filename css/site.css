@@ -282,12 +282,14 @@ section {
     
 }
 .projectCard:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.05, 1.05);
+    filter: drop-shadow(0 2em 3em rgb(167, 81, 201));
 }
 
 /* Fade in the pseudo-element with the bigger shadow */
 .projectCard:hover::after {
     opacity: 1;
+    
 }
 
     
