@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/css/prism.css">
     <link href="css/sites.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
+    <link href="css/NeonBtnAlt.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100 mt-3">
@@ -70,11 +71,10 @@
                    </div>
            </div>
    </nav>
-     <main class="container flex-shrink-0 mt-5">
-        <h1 class="mt-5 text-light">Loan Shark</h1>
-        
+     <main class="container m-5">
+        <h1>Loan Shark</h1>
         <div class="row">
-            <div class="col card bg-dark opacity-100 w-50 justify-content-center align-content-center">
+            <div class="col">
                 <div class="row row-cols-1">
                     <div class="col">
                         <label for="lAmount">Loan Amount</label>
@@ -98,44 +98,45 @@
 
                 <div class="row mt-3">
                     <div class="col">
-                        <a type="button" id="btnSubmit" class="neon-button btn-outline-dark">Calculate</a>
+                        <a type="button" id="btnSubmit" class="neon-button-alt btn-outline-dark">Calculate</a>
                     </div>
                 </div>
 
             </div>
-            <div class=" bg-dark opacity-75 w-50 justify-content-center align-content-center text-light">
-            <div class="col-5 card bg-dark opacity-75 w-50 justify-content-center align-content-center">
-                <div id="paymentTitle">
-                    <p>Monthly Payment</p>
+            <div class="col bg-dark opacity-100">
+                <div class="row gy-2">
+                <div class="col" id="paymentTitle">
+                    <p class="text-primary">Monthly Payment</p>
                 </div>
                 <p class="text-right" id=payment>
 
                 </p>
                 <div class="row row cols-2">
                     <div class="col">
-                        <label class="col text-left justify-content-center  ">Total Principal</label>
+                        <label class="col text-left justify-content-center text-primary ">Total Principal</label>
                     </div>
                     <div class="col text-right justify-content-center " id="totalPrincipal">
 
                     </div>
-                    <div class="col text-left">
+                    <div class="col text-left text-primary">
                         <label>Total Interest</label>
                     </div>
-                    <div class="col text-right" id="totalInterest">
+                    <div class="col text-right text-light" id="totalInterest">
 
                     </div>
-                    <div class="col text-left">
+                    <div class="col text-left text-primary">
                         <label>Total Cost</label>
                     </div>
-                    <div class="col text-right" id="totalCost">
+                    <div class="col text-right text-light" id="totalCost">
 
                     </div>
                 </div>
             </div>
-            </div>
         </div>
-        <div class="row">
+        </div>
             <div class="col">
+                <div class="row row-col-md-1">
+                <div class="table-responsive">
                 <table class="table table-striped table-hover">
                     <thead id="tableheader" class="bg-dark text-white">
                         <tr>
@@ -152,8 +153,9 @@
                     </thead>
                 </table>
             </div>
+            </div>
         </div>
-
+</div>
 
 
     </main>  
@@ -170,7 +172,7 @@
 
         </template>
         <footer class="footer mt-auto py-3  sticky-footer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row row-cols-1 row-cols-lg-3 gy-2">
                     <div class="col order-last order-lg-first ">
                         <div>
@@ -178,38 +180,39 @@
                         </div>
                     </div>
                     <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                       
+
                     </div>
                     <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                         <div class="row">
                             <div class="col social">
-                                <a class="neon-button" href="#">
+                                <a class="neon-button-social"
+                                    href="https://www.linkedin.com/in/william-ogburn-22b15b168/">
                                     <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
                                 </a>
 
                             </div>
                             <div class="col social">
-                                <a class="neon-button" href="#">
+                                <a class="neon-button-social" href="#">
                                     <i class="fab fa-github fa-2x" aria-hidden="true"></i>
                                 </a>
 
                             </div>
                             <div class="col social">
-                                <a class="neon-button" href="#">
+                                <a class="neon-button-social" href="#">
                                     <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
                                 </a>
 
                             </div>
                             <div class="col social">
-                                <a class="neon-button" href="#">
+                                <a class="neon-button-social" href="#">
                                     <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
                                 </a>
 
                             </div>
                         </div>
-
+            </div>
                     </div>
-                </div>
+            </div>  
         </footer>
 
         <!-- Bootstrap JS -->

@@ -24,12 +24,14 @@
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/sites.css">
     <link rel="stylesheet" href="/css/prism.css">
-
+    <link href="/css/NeonBtnAlt.css" rel="stylesheet">
+    
+    
 </head>
 
-<body class="">
+<body class="d-flex flex-column h-100 pageBg">
 
-    <main class="d-flex flex-column h-100">
+    <main class="d-flex flex-column " id="content">
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black" id="mainNav">
             <div class="container">
@@ -39,9 +41,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto mb-2 mb-md-0 ">
-                        <li class="nav-item neon-button btn-outline-dark">
-                            <a class="nav-link active" aria-current="page" href="#">Trey</a>
-                        </li>
                         <li class="nav-item neon-button btn-outline-dark ">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -62,7 +61,8 @@
                         </li>
                         <li class="nav-item neon-button btn-outline-dark">
                             <div class="btn-group">
-                                <a type="button" href="#codingChallenge" class="nav-link border-end border-warning">Challenges</a>
+                                <a type="button" href="#codingChallenge"
+                                    class="nav-link border-end border-warning">Challenges</a>
                                 <a type="button" class="btn dropdown-toggle dropdown-toggle-split nav-link"
                                     data-bs-toggle="dropdown">
                                     <!-- <i class="fa fa-caret-down"></i> -->
@@ -117,7 +117,7 @@
         </header>
 
         <!--all sections below-->
-        <main class="container">
+        <main class=" container">
             <section class="section-page p-1" id="about">
                 <div class="row mt-5 mb-5">
                     <div class="col-12 col-md-5">
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-7 corner bg-dark text-light bg-opacity-75 mb-5">
+                    <div class=" col-12 col-md-7  corner bg-dark text-light bg-opacity-75 mb-5">
                         <h2> My name is William "Trey" Ogburn, and I'm your next developer.</h2>
                         <p>
                             I am a developer based out of the United States, and my specialty is creativity.
@@ -169,7 +169,8 @@
 
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <a href="#" class="neon-button btn-outline-dark">Download Resume</a>
+                                    <a href="#" class="neon-button btn-outline-dark" alt="btn btn-danger">Download
+                                        Resume</a>
                                 </div>
                             </div>
                         </address>
@@ -258,7 +259,7 @@
                 <div class="row row-cols-1 row-cols-md-3 gy-5">
                     <div class="col d-flex justify-content-center justify-content-md-start">
                         <div class="card projectCard">
-                            <img src="img/Logos/logos/BugTracker2.jpg" class="card-img-top img-fluid" alt="Bug Tracker">
+                            <img src="img/Logos/logos/BugTracker2.jpg" class="card-img-top  img-fluid" alt="Bug Tracker">
                             <div class="card-body bg-dark">
                                 <h5 class="card-title\">TroubleSnooper</h5>
                                 <p class="card-text">
@@ -268,8 +269,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#BugTrackerModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#BugTrackerModal>Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -286,8 +287,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#ExpenseModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#ExpenseModal>Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -303,8 +304,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#BlogModal>Hot Takes</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#BlogModal>Hot Takes</a>
                             </div>
                         </div>
                     </div>
@@ -344,8 +345,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#SharkModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#SharkModal>Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -361,13 +362,13 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#DogModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#DogModal>Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col d-flex justify-content-center justify-content-md-end">
-                        <div class="card projectCard">
+                        <div class="card box projectCard">
                             <img src="/img/Fish Buzz 3.jpg" alt="Blog">
                             <div class="card-body bg-dark">
                                 <h5 class="card-title">
@@ -378,8 +379,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#FishModal>Hot Takes</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#FishModal>Hot Takes</a>
                             </div>
                         </div>
                     </div>
@@ -398,8 +399,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#HundoModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#HundoModal>Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -416,8 +417,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#CatModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#CatModal>Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -433,8 +434,8 @@
                                 </h5>
                             </div>
                             <div class="card-footer bg-black text-center">
-                                <a class="neon-button btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                                    data-bs-target=#RevModal>Learn More</a>
+                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
+                                    data-bs-toggle="modal" data-bs-target=#RevModal>Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -523,7 +524,7 @@
 
                                         </div>
                                         <div class="col-12 d-flex justify-content-center pt-2">
-                                            <button class="btn neon-button btn-outline-dark"
+                                            <button class="btn neon-button-alt btn-outline-dark"
                                                 type="submit">Submit</button>
 
                                         </div>
@@ -549,31 +550,31 @@
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social-alt"
+                                href="https://www.linkedin.com/in/william-ogburn-22b15b168/">
                                 <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="Neon-button-social-alt" href="https://github.com/Veryings">
                                 <i class="fab fa-github fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social-alt" href="#">
                                 <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social-alt" href="#">
                                 <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                     </div>
-
                 </div>
             </div>
     </footer>
@@ -833,8 +834,8 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-black">
-                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                    <a type="button" href="calcApp.html" class="neon-button btn-outline-dark">View Site</a>
+                    <a type="button" class="neon-button-alt btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="calcApp.html" class="neon-button-alt btn-outline-dark">View Site</a>
 
                 </div>
             </div>
@@ -896,8 +897,8 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-black">
-                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                    <a type="button" href="fishbuzz2.html" class="neon-button btn-outline-dark">View Site</a>
+                    <a type="button" class="neon-button-alt btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="fishbuzz2.html" class="neon-button-alt btn-outline-dark">View Site</a>
 
                 </div>
             </div>
@@ -958,8 +959,8 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-black">
-                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                    <a type="button" href="hundo.html" class="neon-button btn-outline-dark">View Site</a>
+                    <a type="button" class="neon-button-alt btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="hundo.html" class="neon-button-alt btn-outline-dark">View Site</a>
 
                 </div>
             </div>
@@ -1020,8 +1021,8 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-black">
-                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                    <a type="button" href="superdog.html" class="neon-button btn-outline-dark">View Site</a>
+                    <a type="button" class="neon-button-alt btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="superdog.html" class="neon-button-alt btn-outline-dark">View Site</a>
 
                 </div>
             </div>
@@ -1083,8 +1084,8 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-black">
-                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                    <a type="button" href="tacocat.html" class="neon-button btn-outline-dark">View Site</a>
+                    <a type="button" class="neon-button-alt btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="tacocat.html" class="neon-button-alt btn-outline-dark">View Site</a>
 
                 </div>
             </div>
@@ -1145,8 +1146,8 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-black">
-                    <a type="button" class="neon-button btn-outline-dark" data-bs-dismiss="modal">Close</a>
-                    <a type="button" href="coderevapp.html" class="neon-button btn-outline-dark">View Site</a>
+                    <a type="button" class="neon-button-alt btn-outline-dark" data-bs-dismiss="modal">Close</a>
+                    <a type="button" href="coderevapp.html" class="neon-button-alt btn-outline-dark">View Site</a>
 
                 </div>
             </div>

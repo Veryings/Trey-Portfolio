@@ -1,0 +1,166 @@
+:root {
+    --title-font: 'Bebas Neue', cursive;
+    --bd-body-font: 'Roboto', sans-serif;
+    --subtitle-font: 'Fira Sans', sans-serif;
+    --bd-primary-color: #91CBFB;
+    --bd-secondary-color: #4294BA;
+    --bd-dark-color: #212121;
+    --bd-light-color: #f8f8f8;
+    --bd-font-size: 1.2rem;
+    --bd-line-height: 1.5rem;
+    --bd-font-weight: 400;
+    --bd-title-color: #327288;
+    --level-one: translateZ(3rem);
+    --level-two: translateZ(6rem);
+    --level-three: translateZ(9rem);
+    --level-four: translatez(12rem);
+    --fw-normal: 400;
+    --fw-bold: 700: slide 5s linear infinite;
+    --clr: #000000;
+    --animation-iteration-count: 1;
+    --clr-neon: rgb(0, 153, 153);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-black: black;
+}
+.neon-button-alt {
+    font-size: 1rem;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon 0.125em solid);
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+        0 0 0.125px hsl(0, 0%, 100% / 0.5),
+        0 0 0.45px currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+    position: relative;
+
+}
+
+.neon-button-alt::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 65%;
+
+    transform: perspective(1em) rotateX (40deg) scale(1, 0.35);
+
+    filter: blur(1em);
+    opacity: 0.6;
+}
+
+.neon-button-alt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon-button-alt:hover,
+.neon-button-alt:focus {
+    color: var(rgb(3, 3, 3));
+    font-weight: 400;
+    font-style: var(--fw-bold);
+    text-shadow: none;
+}
+
+.neon-button-alt:hover::before,
+.neon-button-alt::before {
+
+    opacity: 1;
+}
+
+.neon-button-alt:hover::after,
+.neon-button-alt:focus::after {
+
+    opacity: 1;
+}
+
+.neon-button-social-alt {
+    font-size: 1rem;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon 0.125em solid);
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+        0 0 0.125px hsl(0, 0%, 100% / 0.5),
+        0 0 0.45px currentColor;
+
+    box-shadow: inset 0 0 -0.5em 0 var(--clr-neon), 0 0 -0.5em 0 var(--clr-neon);
+
+    position: relative;
+
+}
+
+.neon-button-social-alt::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: -120%;
+    left: 0%;
+
+    width: 100%;
+    height: 65%;
+
+    transform: perspective(1em) rotateX (80deg) scale(1, 0.35);
+
+    filter: blur(1em);
+    opacity: 0.6;
+}
+
+.neon-button-social-alt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 -2em -0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon-button-social-alt:hover,
+.neon-button-social-alt:focus {
+    color: var(rgb(3, 3, 3));
+    font-weight: 400;
+    font-style: var(--fw-bold);
+    text-shadow: none;
+}
+
+.neon-button-social-alt:hover::before,
+.neon-button-social-alt:focus::before {
+
+    opacity: 1;
+}
+
+.neon-button-social-alt:hover::after,
+.neon-button-social-alt:focus::after {
+
+    opacity: 1;
+}

@@ -20,6 +20,7 @@
     <link href="css/sites.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
     <link href="css/sitedog.css" rel="stylesheet">
+    <link href="css/NeonBtnAlt.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -32,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto mb-2 mb-md-0 ">
-                    <button class="navbar-toggler neon" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler neon-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -76,11 +77,11 @@
         <div class="card bg-transparent">
             <div class="container mt-5 mb-5">
                 <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col-12 col-lg-5 mt-3 ">
+                    <div class="col">
 
                         <div class="btn-group mb-2" role="group">
                             <a id="btnCityDrop" href="javascript:void()" type="button"
-                                class="neon-button bg-black"
+                                class="neon-button-alt bg-black"
                                 data-bs-toggle="dropdown" aria-expanded="false">
 
                                 Pick Location
@@ -92,7 +93,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 p-2">
+                
+                    <div class="table-responsive">
                     <table class="table table-striped">
                         <tr>
                             <th class=" text-light bg-dark" colspan="2" id="statsHeader">Stats For All Events </th>
@@ -115,7 +117,8 @@
                         </tr>
 
                     </table>
-                </div>
+                    </div>
+                
 
                 <div class="row">
                     <div class="col">
@@ -132,6 +135,7 @@
                                 Data</a>
                         </div>
                     </div>
+                     <div class="table-responsive">
                     <table class="table table-striped p-2" id="eventData">
                         <thead>
                             <tr class= "bg-dark">
@@ -146,13 +150,14 @@
 
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
             </div>
         </div>
     </main>
     <footer class="footer mt-auto py-3  sticky-footer">
-        <div class="container-fluid">
+        <div class="row">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col order-last order-lg-first ">
                     <div>
@@ -165,25 +170,25 @@
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social" href="https://www.linkedin.com/in/william-ogburn-22b15b168/">
                                 <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social" href="https://github.com/Veryings">
                                 <i class="fab fa-github fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social" href="#">
                                 <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
                             </a>
 
                         </div>
                         <div class="col social">
-                            <a class="neon-button" href="#">
+                            <a class="neon-button-social" href="#">
                                 <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
                             </a>
 
