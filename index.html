@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Custome Style Sheet-->
+    <link rel="stylesheet" href="/js/site.js">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/sites.css">
     <link rel="stylesheet" href="/css/prism.css">
@@ -53,12 +54,12 @@
                         <li class="nav-item neon-button btn-outline-dark">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item neon-button btn-outline-dark">
+                        <!-- <li class="nav-item neon-button btn-outline-dark">
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item neon-button btn-outline-dark">
                             <a class="nav-link" href="#blog">Blog</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item neon-button btn-outline-dark">
                             <div class="btn-group">
                                 <a type="button" href="#codingChallenge"
@@ -137,9 +138,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-12 col-md-7  corner bg-dark text-light bg-opacity-75 mb-5">
-                        <h2> My name is William "Trey" Ogburn, and I'm your next developer.</h2>
-                        <p>
+                    <div class=" col-12 col-md-7  corner bg-dark text-light bg-opacity-75 mb-5 ">
+                        <h2 class=""> My name is William "Trey" Ogburn, and I'm your next developer.</h2>
+                        <p class="">
+
                             I am a developer based out of the United States, and my specialty is creativity.
                             Using my unique creativity and large array of problem solving solutions, I am able to
                             elevate any business to that NEXT level.
@@ -256,56 +258,68 @@
                     development.</p>
                 </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 gy-5">
-                    <div class="col d-flex justify-content-center justify-content-md-center">
-                        <div class="card h-100 projectCard">
-                            <img src="img/Logos/logos/BugTracker2.jpg" class="card-img-top img-fluid" alt="Bug Tracker">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title\">TroubleSnooper</h5>
-                                <p class="card-text">
-                                    A Full Stack feature rich bug tracker built with asp.net MV
-                                </p>
+                <div class="row row-cols-1 row-cols-lg-3 gy-5">
 
-                                </h5>
+                    <div class="col d-flex justify-content-center justify-content-md-center">
+                        <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#BugTrackerModal>
+                            <div class="card h-100 projectCard">
+                                <img src="img/Logos/logos/BugTracker2.jpg" class="card-img-top img-fluid"
+                                    alt="Bug Tracker">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title\">
+                                        <h5>Under Construction</h5>
+
+                                        <p class="card-text">
+                                            A Full Stack feature rich bug tracker built with asp.net MV
+                                        </p>
+
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+                                </div>
                             </div>
-                            <div class="card-footer bg-black text-center">
-                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#BugTrackerModal>Learn More</a>
-                            </div>
+
                         </div>
                     </div>
 
-                    <div class="col d-flex justify-content-center">
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Logos/logos/ExpenseTracker2.jpg" alt="Expense Tracker">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">
-                                    <p class="card-text">
-                                        A Full Stack personal budgeting app built with asp.net MVC, C#
-                                        and SQL.
-                                    </p>
-                                </h5>
-                            </div>
-                            <div class="card-footer bg-black text-center">
-                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#ExpenseModal>Learn More</a>
+                    <div class="col d-flex justify-content-center align-content-center">
+                        <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#ExpenseModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Logos/logos/ExpenseTracker2.jpg" alt="Expense Tracker">
+                                <div class="card-body bg-dark">
+
+                                    <h5 class="card-title">
+                                        <h5>Under Construction</h5>
+                                        <p class="card-text">
+                                            A Full Stack personal budgeting app built with asp.net MVC, C#
+                                            and SQL.
+                                        </p>
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col d-flex justify-content-center justify-content-md-center">
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Logos/logos/Blog2.jpg" alt="Blog">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">
-                                    <p class="card-text">
-                                        A Full Stack complete Blogging platform built with asp.net MVC, C#
-                                        and SQL.
-                                    </p>
-                                </h5>
-                            </div>
-                            <div class="card-footer bg-black text-center">
-                                <a class="neon-button-alt btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#BlogModal>Hot Takes</a>
+                        <div class="btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#BlogModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Logos/logos/Blog2.jpg" alt="Blog">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title">
+                                        <h5>Under Construction</h5>
+                                        <p class="card-text">
+                                            A Full Stack complete Blogging platform built with asp.net MVC, C#
+                                            and SQL.
+                                        </p>
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -314,13 +328,13 @@
 
             </section>
 
-            <section class="row section-page text-light bg-dark corner bg-opacity-75 mb-5" id="projects">
+            <!-- <section class="row section-page text-light bg-dark corner bg-opacity-75 mb-5" id="projects">
                 <h1>Projects</h1>
             </section>
 
             <section class="row section-page bg-dark corner text-light bg-opacity-75 mb-5" id="blog">
                 <h1>Blog</h1>
-            </section>
+            </section> -->
             <section class="row section-page bg-dark corner text-light bg-opacity-75 mb-5" id="codingChallenge">
 
                 <div class="col-12"></div>
@@ -332,9 +346,9 @@
                 </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-lg-3 gy-3">
+                <div class="row row-cols-1 row-cols-lg-3 gy-5">
 
-                    <div class="col d-flex justify-content-center justify-content-lg-center">
+                    <div class="col d-flex justify-content-center justify-content-md-center">
                         <div href="javascript:void()" data-bs-toggle="modal" data-bs-target="#SharkModal">
                             <div class="card h-100 projectCard">
                                 <img src="img/Blue Minimal Shark Fin Logo.png" class="card-img-top img-fluid"
@@ -342,7 +356,8 @@
                                 <div class="card-body bg-dark">
                                     <h5 class="card-title\">TroubleSnooper</h5>
                                     <p class="card-text">
-                                        A Full Stack feature rich bug tracker built with asp.net MV
+                                        <p>The loan amortization calculator app you need.</p>
+                                        <p>The system was built with CSS, JavaScript, and HTML.</p>
                                     </p>
 
                                     </h5>
@@ -354,106 +369,118 @@
                         </div>
                     </div>
 
-                    <div class="col d-flex justify-content-center">
-                        
-                         <div class=" btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#DogModal>
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Cute Dog illustration Pet Logo.png" alt="Expense Tracker">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">
-                                    <h5>Super Dog!</h5>
-                                    <p class="card-text">
-                                        An app to help you count your fans based on location!
-                                    </p>
-                                </h5>
-                            </div>
-                            <div class="card-footer bg-black text-center">
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-flex justify-content-center justify-content-lg-end">
-                        <div class=" btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#FishModal>
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Fish Buzz 3.jpg" alt="Blog">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">
-                                    <h5>Fish Buzz</h5>
-                                    <p class="card-text">
-                                        A Full Stack complete Blogging platform built with asp.net MVC, C#
-                                        and SQL.
-                                    </p>
-                                </h5>
-                            </div>
-                            <div class="card-footer bg-black text-center">
-                            </div>
-                            </div>
-                        
-                    </div>
-                </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-3 gy-3">
-                   
-                    <div class="col d-flex justify-content-center justify-content-lg-center">
+                    <div class="col d-flex justify-content-center align-content-center">
+
                         <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
-                       data-bs-target=#HundoModal>
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Textured Heart Shaped Steak Silhouette Butcher Shop Logo.png"
-                                class="card-img-top img-fluid" alt="Bug Tracker">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">TroubleSnooper</h5>
-                                <p class="card-text">
-                                    A Full Stack feature rich bug tracker built with asp.net MV
-                                </p>
+                            data-bs-target=#DogModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Cute Dog illustration Pet Logo.png" alt="Expense Tracker">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title">
+                                        <h5>Super Dog!</h5>
+                                        <p class="card-text">
+                                            <p>An app to help you count your fans based on location!</p>
+                                            <p>The system was built with CSS, JavaScript, and HTML.</p>
+                                        </p>
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center justify-content-md-center">
+                        <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#FishModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Fish Buzz 3.jpg" alt="Blog">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title">
+                                        <h5>Fish Buzz</h5>
+                                        <p class="card-text">
+                                            <p>An app that returns an int, fish, buzz, or fishBuzz depending on intigers
+                                                input by the user </p>
+                                            <p>The system was built with CSS, JavaScript, and HTML.</p>
+                                        </p>
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+                                </div>
+                            </div>
 
-                                
-                            </div>
-                            <div class="card-footer bg-black text-center">
-                                
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 gy-5">
+
+                    <div class="col d-flex justify-content-center justify-content-md-center">
+                        <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#HundoModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Textured Heart Shaped Steak Silhouette Butcher Shop Logo.png"
+                                    class="card-img-top img-fluid" alt="Bug Tracker">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title">Hundo</h5>
+                                    <p class="card-text">
+                                        <p>This app counts to 100. Warning: The even numbers are bold.</p>
+
+
+                                        <p>The system was built with CSS, JavaScript, and HTML.</p>
+                                    </p>
+
+
+                                </div>
+                                <div class="card-footer bg-black text-center">
+
+                                </div>
                             </div>
                         </div>
-                   </div>
                     </div>
 
-                    <div class="col d-flex justify-content-center">
-                        <div class=" btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#CatModal>
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Cute Cat illustration Bread & Candy Food Logo.png" alt="Expense Tracker">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">
-                                    <p class="card-text">
-                                        A Full Stack personal budgeting app built with asp.net MVC, C#
-                                        and SQL.
-                                    </p>
-                                </h5>
-                            </div>
-                            <div class="card-footer bg-black text-center">
-                                
+                    <div class="col d-flex justify-content-center align-content-center">
+                        <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#CatModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Cute Cat illustration Bread & Candy Food Logo.png" alt="Expense Tracker">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title">
+                                        <h5>Meolindrome!</h5>
+                                        <p class="card-text">
+                                            A cat will tell you when to back off, this app just tells you if the input
+                                            is a palindrome.
+
+
+                                        </p>
+                                        <p>This app was built with CSS, JavaScript, and HTML.</p>
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <div class="col d-flex justify-content-center justify-content-lg-end">
-                         <a class=" btn-outline-dark" href="javascript:void()"
-                                    data-bs-toggle="modal" data-bs-target=#RevModal>
-                        <div class="card h-100 projectCard">
-                            <img src="/img/Beige Minimalist Circle Line Art Initials Logo.png" alt="Blog">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title">
-                                    <p class="card-text">
-                                        A Full Stack complete Blogging platform built with asp.net MVC, C#
-                                        and SQL.
-                                    </p>
-                                </h5>
+                    <div class="col d-flex justify-content-center justify-content-md-center">
+                        <div class=" btn-outline-dark" href="javascript:void()" data-bs-toggle="modal"
+                            data-bs-target=#RevModal>
+                            <div class="card h-100 projectCard">
+                                <img src="/img/Beige Minimalist Circle Line Art Initials Logo.png" alt="Blog">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title">
+                                        <h5>String Reverse</h5>
+                                        <p class="card-text">
+                                            <p>Enter a string, click the button, enjoy shenangigans as it sends it back
+                                                in reverse order!</p>
+
+                                            <p> The system was built with CSS, JavaScript, and HTML.</p>
+                                        </p>
+                                    </h5>
+                                </div>
+                                <div class="card-footer bg-black text-center">
+                                </div>
+
                             </div>
-                            <div class="card-footer bg-black text-center">
-                            </div>
-                            
                         </div>
-                    </div>
                     </div>
                 </div>
             </section>
