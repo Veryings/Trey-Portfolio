@@ -74,85 +74,147 @@
     </nav>
 
     <main class="flex-shrink-0 mt-5">
-        <div class="card bg-transparent">
-            <div class="container mt-5 mb-5">
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col">
-
-                        <div class="btn-group mb-2" role="group">
-                            <a id="btnCityDrop" href="javascript:void()" type="button"
-                                class="neon-button-alt bg-black"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-
-                                Pick Location
-                        </a>
-                            <ul class="dropdown-menu" id="eventDropDown" aria-labelledby="btnCityDrop">
-                                <!--menu items go here-->
-
-                            </ul>
-                        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <div class="btn-group" role="group">
+                        <button id="btnCityDrop" type="button" class="btn neon-button dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pick Location
+                        </button>
+                        <ul class="dropdown-menu" id="eventDropDown" aria-labelledby="btnCityDrop">
+                            <li><a class="dropdown-item" onclick="getEvents(this)" data-city="All">All</a></li>
+                            <li><a class="dropdown-item" onclick="getEvents(this)" data-city="New York">New York</a>
+                            </li>
+                            <li><a class="dropdown-item" onclick="getEvents(this)" data-city="San Diego">San Diego</a>
+                            </li>
+                            <li><a class="dropdown-item" onclick="getEvents(this)" data-city="Charlotte">Charlotte</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                
-                    <div class="table-responsive">
                     <table class="table table-striped">
-                        <tr>
-                            <th class=" text-light bg-dark" colspan="2" id="statsHeader">Stats For All Events </th>
-                        </tr>
-                        <tr>
-                            <td>Total Attendance</td>
-                            <td id="total">100</td>
-                        </tr>
-                        <tr>
-                            <td>Average Attendance</td>
-                            <td id="average">100</td>
-                        </tr>
-                        <tr>
-                            <td>Most Attended</td>
-                            <td id="most">100</td>
-                        </tr>
-                        <tr>
-                            <td>Least Attended</td>
-                            <td id="least">100</td>
-                        </tr>
-
-                    </table>
-                    </div>
-                
-
-                <div class="row">
-                    <div class="col">
-
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col">
-                        <div class="container-fluid d-flex justify-content-end">
-                            <a class="neon-button bg-black" data-bs-toggle="modal"
-                                data-bs-target="#addData">Add
-                                Data</a>
-                        </div>
-                    </div>
-                     <div class="table-responsive">
-                    <table class="table table-striped p-2" id="eventData">
-                        <thead>
-                            <tr class= "bg-dark">
-                                <th class=" text-light">Event Name</th>
-                                <th class=" text-light">Event City</th>
-                                <th class=" text-light">State</th>
-                                <th class=" text-light">Attendance</th>
-                                <th class=" text-light">Event Date</th>
+                        <tbody>
+                            <tr>
+                                <th colspan="2" id="statsHeader">Stats For All Events</th>
                             </tr>
-                        </thead>
-                        <tbody id="eventBody">
-
+                            <tr>
+                                <td>Total Attendance</td>
+                                <td id="total">1,302,000</td>
+                            </tr>
+                            <tr>
+                                <td>Average Attendance</td>
+                                <td id="average">144,667</td>
+                            </tr>
+                            <tr>
+                                <td>Most Attended</td>
+                                <td id="most">257,000</td>
+                            </tr>
+                            <tr>
+                                <td>Least Attended</td>
+                                <td id="least">40,000</td>
+                            </tr>
                         </tbody>
                     </table>
-                    </div>
                 </div>
+                <div class="col order-first order-md-last">
+                    <img src="/img/Cute Dog illustration Pet Logo.png" alt="PlaceHolder" class="img-fluid p-2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-outline neon-button" data-bs-toggle="modal" data-bs-target="#addData">Add Data</button>
+                </div>
+                <table class="table table-striped" id="eventData">
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Attendace</th>
+                            <th>Event Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventBody">
+                        <!--Data goes here-->
+
+                        <tr>
+                            <td data-id="event">ComicCon</td>
+                            <td data-id="city">New York</td>
+                            <td data-id="eventState">New York</td>
+                            <td data-id="attendance">240000</td>
+                            <td data-id="eventDate">6/1/2017</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">ComicCon</td>
+                            <td data-id="city">New York</td>
+                            <td data-id="eventState">New York</td>
+                            <td data-id="attendance">250000</td>
+                            <td data-id="eventDate">6/1/2018</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">ComicCon</td>
+                            <td data-id="city">New York</td>
+                            <td data-id="eventState">New York</td>
+                            <td data-id="attendance">257000</td>
+                            <td data-id="eventDate">6/1/2019</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">ComicCon</td>
+                            <td data-id="city">San Diego</td>
+                            <td data-id="eventState">California</td>
+                            <td data-id="attendance">130000</td>
+                            <td data-id="eventDate">6/1/2017</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">ComicCon</td>
+                            <td data-id="city">San Diego</td>
+                            <td data-id="eventState">California</td>
+                            <td data-id="attendance">140000</td>
+                            <td data-id="eventDate">6/1/2018</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">ComicCon</td>
+                            <td data-id="city">San Diego</td>
+                            <td data-id="eventState">California</td>
+                            <td data-id="attendance">150000</td>
+                            <td data-id="eventDate">6/1/2019</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">HeroesCon</td>
+                            <td data-id="city">Charlotte</td>
+                            <td data-id="eventState">North Carolina</td>
+                            <td data-id="attendance">40000</td>
+                            <td data-id="eventDate">6/1/2017</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">HeroesCon</td>
+                            <td data-id="city">Charlotte</td>
+                            <td data-id="eventState">North Carolina</td>
+                            <td data-id="attendance">45000</td>
+                            <td data-id="eventDate">6/1/2018</td>
+                        </tr>
+
+                        <tr>
+                            <td data-id="event">HeroesCon</td>
+                            <td data-id="city">Charlotte</td>
+                            <td data-id="eventState">North Carolina</td>
+                            <td data-id="attendance">50000</td>
+                            <td data-id="eventDate">6/1/2019</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
@@ -296,7 +358,7 @@
     </div>
 
     <!--------------------------------------Templates--------------------------------------------->
-    
+
     <template id="eventData-template">
         <tr>
             <td> data-id ="event"</td>
