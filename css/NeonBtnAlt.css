@@ -4,7 +4,7 @@
     --subtitle-font: 'Fira Sans', sans-serif;
     --bd-primary-color: #91CBFB;
     --bd-secondary-color: #4294BA;
-    --bd-dark-color: #212121;
+    --bd-dark-color: #2e4159;
     --bd-light-color: #f8f8f8;
     --bd-font-size: 1.2rem;
     --bd-line-height: 1.5rem;
@@ -18,7 +18,7 @@
     --fw-bold: 700: slide 5s linear infinite;
     --clr: #000000;
     --animation-iteration-count: 1;
-    --clr-neon: rgb(0, 153, 153);
+    --clr-neon: #8f8ebf;
     --clr-bg: hsl(323 21% 16%);
     --clr-black: black;
 }
@@ -28,8 +28,8 @@
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    color: var(--clr-neon);
-    border: var(--clr-neon 0.125em solid);
+    color: var(--clr-black);
+    border: var(--clr-dark);
     padding: 0.25em 1em;
     border-radius: 0.25em;
 
@@ -48,6 +48,7 @@
     content: "";
     position: absolute;
     background: var(--clr-neon);
+    
     top: 120%;
     left: 0;
     width: 100%;
@@ -69,6 +70,7 @@
     box-shadow: 0 0 2em 0.5em var(--clr-neon);
     opacity: 0;
     background-color: var(--clr-neon);
+    color: aliceblue;
     z-index: -1;
     transition: opacity 100ms linear;
 }
@@ -100,6 +102,7 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
+    font: var(--bd-light-color)
     border: var(--clr-neon 0.125em solid);
     padding: 0.25em 1em;
     border-radius: 0.25em;

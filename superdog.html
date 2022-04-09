@@ -21,6 +21,9 @@
     <link href="css/site.css" rel="stylesheet">
     <link href="css/sitedog.css" rel="stylesheet">
     <link href="css/NeonBtnAlt.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/tableclamp.css" rel="stylesheet">
+    <link href="css/glass.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -36,7 +39,7 @@
                     <button class="navbar-toggler neon-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -74,18 +77,18 @@
     </nav>
 
     <main class="flex-shrink-0 mt-5">
-        <div class="card bg-transparent">
-            <div class="container mt-5 mb-5">
+        <div class="container-fluid bg-transparent">
+            <div class="container-fluid mt-5 mb-5">
                 <div class="row row-cols-1 row-cols-md-2">
                     <div class="col">
 
                         <div class="btn-group mb-2" role="group">
                             <a id="btnCityDrop" href="javascript:void()" type="button"
-                                class="neon-button-alt bg-black"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                                class="neon-button-alt btn-outline-primary" data-bs-toggle="dropdown"
+                                aria-expanded="false">
 
                                 Pick Location
-                        </a>
+                            </a>
                             <ul class="dropdown-menu" id="eventDropDown" aria-labelledby="btnCityDrop">
                                 <!--menu items go here-->
 
@@ -93,32 +96,34 @@
                         </div>
                     </div>
                 </div>
-                
-                    <div class="table-responsive">
-                    <table class="table table-striped">
-                        <tr>
-                            <th class=" text-light bg-dark" colspan="2" id="statsHeader">Stats For All Events </th>
-                        </tr>
-                        <tr>
-                            <td>Total Attendance</td>
-                            <td id="total">100</td>
-                        </tr>
-                        <tr>
-                            <td>Average Attendance</td>
-                            <td id="average">100</td>
-                        </tr>
-                        <tr>
-                            <td>Most Attended</td>
-                            <td id="most">100</td>
-                        </tr>
-                        <tr>
-                            <td>Least Attended</td>
-                            <td id="least">100</td>
-                        </tr>
+
+                <div class="col">
+                    <table class="table-responsive glass corner  table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-dark" colspan="2" id="statsHeader">Stats For All Events </th>
+                            </tr>
+                            <tr>
+                                <td class="text-dark">Total Attendance</td>
+                                <td class="text-dark" id="total">100</td>
+                            </tr>
+                            <tr>
+                                <td class="text-dark">Average Attendance</td>
+                                <td class="text-dark" id="average">100</td>
+                            </tr>
+                            <tr>
+                                <td class="text-dark">Most Attended</td>
+                                <td class="text-dark" id="most">100</td>
+                            </tr>
+                            <tr>
+                                <td class="text-dark">Least Attended</td>
+                                <td class="text-dark" id="least">100</td>
+                            </tr>
 
                     </table>
-                    </div>
-                
+                    </thead>
+                </div>
+
 
                 <div class="row">
                     <div class="col">
@@ -130,33 +135,39 @@
                 <div class="row">
                     <div class="col">
                         <div class="container-fluid d-flex justify-content-end">
-                            <a class="neon-button bg-black" data-bs-toggle="modal"
+                            <a class="neon-button-alt btn-outline-primary" data-bs-toggle="modal"
                                 data-bs-target="#addData">Add
                                 Data</a>
                         </div>
                     </div>
-                     <div class="table-responsive">
-                    <table class="table table-striped p-2" id="eventData">
-                        <thead>
-                            <tr class= "bg-dark">
-                                <th class=" text-light">Event Name</th>
-                                <th class=" text-light">Event City</th>
-                                <th class=" text-light">State</th>
-                                <th class=" text-light">Attendance</th>
-                                <th class=" text-light">Event Date</th>
-                            </tr>
-                        </thead>
-                        <tbody id="eventBody">
 
-                        </tbody>
-                    </table>
+
+                    <div class="table" id=" eventData">
+                        <table class="table-responsive glass table-striped table-hover">
+                            <thead>
+                            <tbody class="">
+                                <tr class="container bg-dark">
+                                    <th class=" text-light">Event Name</th>
+
+                                    <th class=" text-light">Event City</th>
+                                    <th class=" text-light">State
+                                    </th>
+                                    <th class=" text-light">Attendance</th>
+                                    <th class=" text-light">Event Date</th>
+                                </tr>
+                            </tbody>
+                            </thead>
+                            <tbody id="eventBody">
+
+                            </tbody>
+                        </table>
+
+
                     </div>
-                </div>
 
-            </div>
-        </div>
+
     </main>
-    <footer class="footer mt-auto py-3  sticky-footer">
+    <!-- <footer class="footer mt-auto py-3  sticky-footer">
         <div class="row">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col order-last order-lg-first ">
@@ -197,7 +208,7 @@
 
                 </div>
             </div>
-    </footer>
+    </footer> -->
 
     <!--modal section-->
     <div class="modal" id="addData">
@@ -296,14 +307,14 @@
     </div>
 
     <!--------------------------------------Templates--------------------------------------------->
-    
+
     <template id="eventData-template">
         <tr>
-            <td> data-id ="event"</td>
-            <td> data-id ="city"</td>
-            <td> data-id ="state"</td>
-            <td> data-id ="attendance"</td>
-            <td> data-id ="eventDate"</td>
+            <td class="text-dark"> data-id ="event"</td>
+            <td class="text-dark"> data-id ="city"</td>
+            <td class="text-dark"> data-id ="state"</td>
+            <td class="text-dark"> data-id ="attendance"</td>
+            <td class="text-dark"> data-id ="eventDate"</td>
         </tr>
 
     </template>
